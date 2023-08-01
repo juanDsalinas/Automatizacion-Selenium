@@ -1,0 +1,164 @@
+selectores o localizadores 
+Que son - 
+
+----------------------------------------- CssSelector ----------------------------------------------
+
+es un atributo que permite encontrar elementos dentro
+de una pagina web, para esto hay varias opciones, el uso
+de cada una de estas tiene sus propias implaciones en terminos
+de rendimiento y funcionalidad 
+
+Tipos de selectores - 
+
+- ID - unico e irrepetible 
+
+- Name - unico de igual manera 
+
+- className - encuentra elementos con el mismo valor en su clase,
+	tambien a su vez se puede acceder a los valores de un atributo hijo
+	desde el padre 
+
+- TagName - se selecciona la etiqueta 
+
+- child combinator - se hace de la siguiente manera a > b con esto le indicamos
+que tome todos los elementos hijos de A que sean iguales a B
+- example - ul > li toma todos los li hijo que se encuentren dentro de ul
+ademas para hacerlo mas especifico podemos hacerlo de la siguiente manera
+ul > li#username - aqui hago referencia a que en el elemento li tome solo el 
+que tenga el id "username"
+
+- descendet combinator - se hace de la siguiente manear a b es espacio entre las
+letras nos indica que va a tomar todos los elementos que sean hijos de a, en 
+este caso todos los b
+ademas para hacerlo mas especifico podemos hacerlo de la siguiente manera
+ul li#username - aqui hago referencia a que en el elemento li tome solo el 
+que tenga el id "username"
+
+- tambien se puede realizar de la siguiente manera -
+form>table>tbody>tr>td>label>input#username
+
+---------------------- Metodos ------------
+- index - forma un conjunto de elementos los cuales se ordenan como una lista iniciando 
+con la posicion 0 
+
+- value - identificar objetos con el atributo name
+
+--------------------- Notas sobre las variaciones y sintaxis para llamar a los elementos
+
+CssSelector - sirve para lo mismo que el xpath
+
+es igual que al llamar los objetos a js es un . punto para las clases y un # hashtag para los id
+
+tambien si se desconoce el nombre del elemento, se puede especificar que -
+con el simbolo '^' indicamos que el texto comienza con la cadena suministrada
+con el simbolo '$' indicamos que el texto termina con la cadena suministrada
+con el simbolo '*' indicamos que el texto contiene con la cadena suministrada
+
+con el not le indicamos que no queremos que los elementos que contengan tal cadena de 
+caracteres se seleccionen
+
+--------------- Buenas practicas ------------------
+refrescar la pagina para ver que el ID no cambia
+ya que hay frameworks que los generan mal, entonces 
+es mejor optar por los namo o className 
+
+con xpath identificamos elementos especificos de la pagina
+ya que este trabaja dentro de archivo XML o HTML
+
+con xpath podemos encontrar elementos basados en:
+nombre de etiqueta, atributos, jerarquias, contenido del
+texto, posicion, entre otros 
+
+
+
+----------------------------------------- XPATH -------------------------------------------
+hace lo mismo que el cssSelector 
+el xpath puede ser absoluto o relativo
+
+Absoluto - 
+es lo mismo que el cssSelector con la particularidad que al recorrer el arbol DOM se tarda
+mas ademas que para realizar la busqueda es necesario escribir la ruta tal y como lo hacemos 
+para las imagenes o los archivos css y si la ruta se cambia, los archivos no se encontraran
+
+Relativo - 
+se indica una ruta especifica la cual puede comenzar desde cuaquier otro lado del dom
+sin necesidad de iniciar por el body 
+- se puede escribir de varias formas 
+
+funciones para construir xpath
+- contains() - se utiliza cuando el valor de un atributo cambia dinamicamente- puede encontrar
+un elemento por su texto total o parcial
+
+Xpath = //*[contains(@type,'sub')]
+Xpath = //*[contains(text(),'here')]
+Xpath = //*[contains(@href,'seleniumease.com')]
+
+- starst-with() - esta funcion sirve para localizar valores cambiantes tales como id, por 
+ejemplo si inicia en p, p1, p2, p3, p4, p5, p6
+tambien sirve para valores estaticos
+
+Xpath=//label[stars-with(@id,'message')]
+
+- OR - en esta expresion se evaluan dos condiciones
+si se cumple uno u otra
+
+Xpath=//label[@id='message' OR @id='passage')
+
+- AND - en esta expresion se evaluan dos condiciones 
+que tienen que ser si o si verdaderas
+
+Xpath=//label[@id='message' AND @id='passage')
+
+- text() - para esta funcion se le pasa el texto que
+contiene el elemento deseado
+
+Xpath=//td[text()='message')
+
+------------------ Metodos Xpath axes ----------------------------------
+- following - selecciona todos los nudos hijos del nodo actual,
+se comporta como un array
+
+aqui nos devolveria un array
+Xpath=//*[@type='type']//following::input
+
+aqui nos devuelve las posiciones del array 
+Xpath=//*[@type='type']//following::input[1]
+
+- Ancestor - selecciona todos los elementos anteriores al nodo actual
+es igual que el anterior, por posiciones de un array
+
+Xpath=//*[text()='hello world']//ancestor::div
+
+Xpath=//*[text()='hello world']//ancestor::div[1]
+
+- Child - selecciona todos los hijos del nivel actual
+
+Xpath=//*[@id='java_tools']//child::li
+
+Xpath=//*[@id='java_tools']//child::li[1]
+
+- preceding - selecciona todos los nodos anteriores a el unicamente
+si se encuentran al mismo nivel que este, no puede retroceder mas 
+
+Xpath=//*[@type='submit']//preceding::input
+Xpath=//*[@type='submit']//preceding::input[1]
+
+- descendant - seleciona todos los nodos hijos de un elemento
+sin importar su nivel
+
+- Following-sibling - selecciona todos los nodos que se encuentran
+en el mismo nivel, solo toma los que se encuentran despues de ese nodo
+
+Xpath=//*[@type='submit']following-sibling::input
+
+- Parent - seleccion el padre del nodo actual
+Xpath=//*[@type='submit']parent::div
+
+- self - selecciona el nodo actual
+Xpath=//*[@type='submit']self::input
+
+- descendant - selecciona a todos los descendientes ya sean hijos,
+nietos, bisnietos, etc.
+Xpath=//*[@type='submit']descendant::a
+
+

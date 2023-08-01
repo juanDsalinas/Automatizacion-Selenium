@@ -1,0 +1,33 @@
+- Introduccion - 
+el Page Object Model o POM - es un patro de diseño para la automatizacion
+de pruebas para evitar duplicidad y mejorar el rendimiento, esta pasa ya que
+el Page Object permite separar el comportamiento de una pagina de los detalles 
+de implementacion
+
+- Estructura - 
+el patron encapsula el comportamiento de las paginas
+o una parte de ellas
+
+cada pagina web debe tener una clase pagina(page class)
+las page class mapearan los elementos de la pagina que se 
+desea automatizar usando locators, junto a esto se 
+encuentran las interacciones del usuario las cuales son 
+implementados como metodos de la clase 
+page Object - es una clase la cual representa una pagina
+o una seccion de esta - cada Page Object encapsula los elementos
+de la pagina(botones,formularios,etc.) ademas de las acciones que 
+se puedan realizar
+
+Tambien existen las Test Class o clases de prueba las cuales
+son clases las cuales contienen la logica de las pruebas y haran
+uso de las Page Class 
+
+esta la pagina web -
+mapeamos la pagina para tomar todos los elementos necesarios
+de esta - Page Object
+realizamos los test sobre los mapeos - Test Class
+
+- Ventajas - 
+la Page Class es independiente de la Test Class
+
+

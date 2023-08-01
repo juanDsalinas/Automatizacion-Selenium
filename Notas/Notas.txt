@@ -1,0 +1,33 @@
+selenium - proyecto general nos da extensiones para emular interacciones de los users con los
+navegadores 
+- el nucleo de selenium es webdriver
+
+webDriver - es una interfaz de control remoto - API
+- esto quiere decir que es una herramienta la cual nos
+permite controlar y acceder a otro dispositivo desde lejos - es multiplataforma
+- ejemplos - control remoto del TV
+
+proporciona un conjunto de interfaces para escubrir y manipular elementos DOM en documentos web
+tales como listas desplegables, formularios entre otros
+
+esta destinado a la automatizacion de usuarios con un proceso de control separado
+
+cada navegador esta respaldado por una implementacion de webDriver llamada controlador
+- el controlador maneja la comunicacion entre el navegador y selenium
+- para utilizar selenium debemos seleccionar las bibliotecas de enlaces de idioma para mi idioma de eleccion
+tambien el navegador que desea usar y el controlador para ese navegador
+
+para realizar nuestro proyectos tenemos que implementar Serenity BDD para desarrollar nuestros proyectos
+se puede realizar con los framework maven o gradle 
+
+
+8 componentes basicos 
+- podemos pedir al navegador una infinidad de cosas tales como 
+- iniciar sesion - 
+- 
+- 
+- 
+- 
+- 
+- 
+- 

@@ -1,0 +1,157 @@
+/* Online Kotlin Compiler */
+fun main() {
+    var aprendices = mutableListOf("")
+    var nDoc = mutableListOf(0)
+    var correo = mutableListOf("")
+    var fNac = mutableListOf("")
+    // \n
+    var res:Int = 1
+    while(res == 1){
+        println("Que deseas hacer")
+        println(" 1 - registrar aprendices \n 2 - mostrar a todos los aprendices registrados \n 3 - mostrar aprendiz por el documento \n 4 - mostrar el aprendiz por posicion(cualquiera) \n 5 - modificar datos de un aprendiz \n 6 -  reemplazar un aprendiz por otro \n 7 - eliminar un aprendiz por cancelacion \n 8 - eliminar varios aprendices a la vez \n 9 - limpiar mi lista")
+        var gente = readLine()!!.toInt()
+        if(gente == 1){
+            println("cuantos aprendices desea ingresar")
+            var n = readLine()!!.toInt()
+            for(i in 1..n){
+                println("Digite el nombre de alumno ${i}")
+                var user = readLine()!!.toString()
+                aprendices.add(user)
+                
+                println("Digite el numero de documento de alumno")
+                var nuser = readLine()!!.toInt()
+                nDoc.add(nuser)
+                
+                println("Digite el correo de alumno")
+                user = readLine()!!.toString()
+                correo.add(user)
+                
+                println("Digite la fecha de nacimiento del alumno")
+                user = readLine()!!.toString()
+                fNac.add(user)
+            }
+                            
+        } else if (gente == 2){
+            for((index,element) in aprendices.withIndex()){
+                println("aprendiz en la posicion ${index} es ${element} ")
+            }
+            
+        } else if (gente == 3){
+            println("Digita el numero de documento que deseas buscar")
+            var number=readLine()!!.toInt()
+            for((index,element) in nDoc.withIndex()){
+                if(nDoc[element] == number){
+                    println("el aprendiz con el numero de documento ${element} es ${aprendices[index]}, su correo es ${correo[index]} y su fecha de nacimiento es ${fNac[index]}")
+                }
+            }
+            
+        }  else if (gente == 4){
+            println("Digita una posicion entre 0 y ${aprendices.size}") 
+            var j=readLine()!!.toInt()
+            println("el aprendiz en la posicion ${j} es ${aprendices[j]}")
+        } else if (gente == 5){
+           println("digita el numero de documento del aprendiz el cual dese as editar")
+           var number=readLine()!!.toInt()
+           for((index,element) in nDoc.withIndex()){
+               if(nDoc[index]==number){
+                   println("¿Que deseas editar?")
+                   println("1 - el nombre \n 2 - el numero de documento \n 3 - la direccion de correo electronico \n 4 - la fecha de nacimiento")
+                   var des=readLine()!!.toInt()
+                   if(des==1){
+                       println("Indica el nuevo nombre que deseas escribir")
+                       var temp = readLine()!!.toString()
+                       aprendices[index] = temp
+                   } else if(des==2){
+                       println("Indica el nuevo numero de documento que deseas escribir")
+                        var tempi = readLine()!!.toInt()
+                        nDoc[index] = tempi
+                   }else if(des==3){
+                       println("Indica el nuevo correo electronico que deseas escribir")
+                       var temp = readLine()!!.toString()
+                       correo[index] = temp
+                       
+                   } else if(des==4){
+                       println("Indica la nueva fecha de nacimiento que deseas escribir")
+                       var temp = readLine()!!.toString()
+                       fNac[index] = temp
+                       
+                   } else {
+                       println("Seleccionaste una opcion invalida")
+                   }
+               }
+           }
+           
+        }else if (gente == 6){
+               println("digita el numero de documento del aprendiz el cual deseas editar")
+           var number=readLine()!!.toInt()
+           for((index,element) in nDoc.withIndex()){
+               if(nDoc[index]==number){
+                       println("Indica el nuevo nombre que deseas escribir")
+                       var temp = readLine()!!.toString()
+                       aprendices[index] = temp
+                       
+                       println("Indica el nuevo numero de documento que deseas escribir")
+                        var tempi = readLine()!!.toInt()
+                        nDoc[index] = tempi
+                        
+                       println("Indica el nuevo correo electronico que deseas escribir")
+                       temp = readLine()!!.toString()
+                       correo[index] = temp
+                       
+                       println("Indica la nueva fecha de nacimiento que deseas escribir")
+                        temp = readLine()!!.toString()
+                       fNac[index] = temp
+                }
+               
+           }
+           
+        }else if (gente == 7){
+            println("Digite el numero de documento del aprendiz que sera eliminado por cancelacion")
+            var docum=readLine()!!.toInt()
+            for((index,element) in nDoc.withIndex()){
+                if(nDoc[index] == docum){
+                    nDoc.remove(nDoc[index])
+                    aprendices.remove(aprendices[index])
+                    correo.remove(correo[index])
+                    fNac.remove(fNac[index])
+                    println("${fNac[index]} y ${nDoc[index]}")
+                    println("El aprendiz a sido cancelado")
+                } else {
+                    println("Aprendiz se ha encontrado el aprendiz")
+                }
+            }
+            
+        } else if (gente == 8){
+            println("Pensando No molestar")
+            println("¿Cuantos aprendices deseas eliminar?")
+            var numbi=readLine()!!.toInt()
+            for(i in 1..numbi){
+                println("Digita el numero de documento para el aprendiz numero ${i}")
+                var fina=readLine()!!.toInt()
+                for((index,element) in aprendices.withIndex()){
+                    if(nDoc[index] == fina){
+                        println("Aprendiz encontrado")
+                        nDoc.remove(nDoc[index])
+                        correo.remove(correo[index])
+                        fNac.remove(fNac[index])
+                        aprendices.remove(aprendices[index])
+                        println("Aprendiz eliminado")
+                    }
+                }
+            }
+            
+        }else if (gente == 9){
+            println("Gracias por utilizar nuestro sistema, que tenga un lindo dia :)")
+            aprendices.clear()
+            nDoc.clear() 
+            correo.clear()
+            fNac.clear() 
+            
+        } else {
+             println("La opcion digitada el Invalida")
+        }
+        
+        println("¿Deseas seguir en el sistema? si - 1 - no - 2")
+        res=readLine()!!.toInt()
+    }
+    

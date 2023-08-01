@@ -1,0 +1,14 @@
+documentacion sobre sesiones de controladores - https://www.selenium.dev/documentation/webdriver/drivers/
+cosas que podemos pedir al browser - https://www.selenium.dev/documentation/webdriver/interactions/
+
+
+
+
+
+
+
+
+
+
+
+

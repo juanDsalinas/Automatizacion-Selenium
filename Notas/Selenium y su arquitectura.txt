@@ -1,0 +1,30 @@
+selenium es una Api la cual nos permite
+interactuar con los objetos de una pagina web
+tales como formularios, botones, ventanas modales
+entre otros sin importar su plataforma ya que trabajan
+bajo codigo HTML, se basa es simular la interaccion de un
+usuario para realizar pruebas
+
+soporta multiples lenguajes como java,python c# y more
+
+----------- Arquitectura de selenium webDriver ------------------
+librerias cliente de selenium - nos permiten crear scripts con diferentes 
+lenguajes de programacion y dependiendo del lenguaje
+cada libreria viene cuando una serie de "herramientas" para facilitar su uso
+
+Protocolo Json Wire - en un api rest que transfiere informacion al servidor HTTP,
+
+- OJO - existe un servidor HTTP para cada driver 
+
+es un protocolo el cual comunica las librerias cliente de selenium con los navegadores web
+- fue la primera forma de comunicacion antes del webDriver 
+este protocolose base en intercambiar JSON - el protocolo permite
+enviar comandos a los controladores(drivers) de los navegadores y recibir una respuesta 
+
+Drivers de los navegadores - son especificos para cada navegador - pasa lo siguiente cuando
+se ejecuta un script de prueba -
+- la solicitud HTTP se genera y se envia al controlador del navegador
+- el controlador recibe la solicitud por el servidor HTTP
+- el servidor HTTP decide los pasos para realizar las instrucciones que se ejecutan en el navegador
+- el estado de ejecucion se envia hacia el servidor HTTP y este se devuelve al script de automatizacion
+- 
