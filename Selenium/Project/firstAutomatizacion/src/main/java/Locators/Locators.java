@@ -11,7 +11,7 @@ public class Locators {
         // instanciando el navigator
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.saucedemo.com/v1/");
+        driver.get("https://es-la.facebook.com/");
 
         driver.manage().window().maximize();
 
@@ -19,15 +19,19 @@ public class Locators {
         String pass="secret_sauce";
 
         // ID
-        WebElement usernameI = driver.findElement(By.id("user-name"));
+        //WebElement usernameI = driver.findElement(By.id("user-name"));
         // WebElement password = driver.findElement(By.id("password"));
         //WebElement loginBtn = driver.findElement(By.id("login-button"));
         // WebElement register = driver.findElement(By.className(".product_sort_container"));
         // WebElement cake = driver.findElement();
+        driver.findElement(By.id("email")).sendKeys("Panadero");
+        driver.findElement(By.id("pass")).sendKeys("con el pa");
+
+        //WebElement loginBtn = driver.findElement(By.id(""))
 
         // ClassName
-        WebElement loginBtn = driver.findElement(By.className("btn_action"));
-
+        // WebElement loginBtn = driver.findElement(By.className("btn_action"));
+        WebElement loginBtn = driver.findElement(By.className("login"));
         // Name
         // WebElement password = driver.findElement(By.name("password"));
 
@@ -35,14 +39,22 @@ public class Locators {
         //WebElement password = driver.findElement(By.xpath("//*[@id=\"password\"]"));
 
         // css Selector
-        WebElement password = driver.findElement(By.cssSelector("input#password"));
+        // WebElement password = driver.findElement(By.cssSelector("input#password"));
 
-        usernameI.sendKeys(username);
-        password.sendKeys(pass);
-        loginBtn.click();
+        // usernameI.sendKeys(username);
+        // password.sendKeys(pass);
+        loginBtn.submit();
         // register.click();
+        // System.out.println(driver.getTitle());
+        // System.out.println(driver.getCurrentUrl());
+        // System.out.println(driver.getPageSource());
+        // driver.navigate().to("https://www.youtube.com/");
+        // driver.navigate().back();
+        // driver.manage().window().minimize();
+        // cierra la ventana actual
+        // driver.close();
 
-        driver.manage().window().minimize();
-        driver.close();
+        // finaliza todas las instancias del driver
+        // driver.quit();
     }
 }

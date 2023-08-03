@@ -1,0 +1,15 @@
+que son - para el asincronismo de las paginas
+
+- Implicit Wait
+para el implicit wait lo que sucede es que se 
+aplica para todo lo que hagamos en la pagina 
+aparte de rellenar un formulario y demas
+
+- Explicit Wait
+
+
+
+
+- Fluent Wait
+
+
