@@ -1,5 +1,4 @@
-selectores o localizadores 
-Que son - 
+--------------------------------------- Selectores o localizadores ---------------------------------
 
 ----------------------------------------- CssSelector ----------------------------------------------
 
@@ -37,13 +36,13 @@ que tenga el id "username"
 - tambien se puede realizar de la siguiente manera -
 form>table>tbody>tr>td>label>input#username
 
----------------------- Metodos ------------
+---------------------------------------------- Metodos --------------------------------------
 - index - forma un conjunto de elementos los cuales se ordenan como una lista iniciando 
 con la posicion 0 
 
 - value - identificar objetos con el atributo name
 
---------------------- Notas sobre las variaciones y sintaxis para llamar a los elementos
+------------- Notas sobre las variaciones y sintaxis para llamar a los elementos -----------
 
 CssSelector - sirve para lo mismo que el xpath
 
@@ -57,10 +56,12 @@ con el simbolo '*' indicamos que el texto contiene con la cadena suministrada
 con el not le indicamos que no queremos que los elementos que contengan tal cadena de 
 caracteres se seleccionen
 
+WebElement elementEmail = driver.findElement(By.cssSelector("div[class*=calendar-day-]:not([class*='unavailable'])"));
+
 --------------- Buenas practicas ------------------
 refrescar la pagina para ver que el ID no cambia
 ya que hay frameworks que los generan mal, entonces 
-es mejor optar por los namo o className 
+es mejor optar por los name o className 
 
 con xpath identificamos elementos especificos de la pagina
 ya que este trabaja dentro de archivo XML o HTML
@@ -69,16 +70,15 @@ con xpath podemos encontrar elementos basados en:
 nombre de etiqueta, atributos, jerarquias, contenido del
 texto, posicion, entre otros 
 
-
-
 ----------------------------------------- XPATH -------------------------------------------
-hace lo mismo que el cssSelector 
-el xpath puede ser absoluto o relativo
+hace lo mismo que el cssSelector - el xpath puede ser absoluto o relativo
 
 Absoluto - 
 es lo mismo que el cssSelector con la particularidad que al recorrer el arbol DOM se tarda
 mas ademas que para realizar la busqueda es necesario escribir la ruta tal y como lo hacemos 
 para las imagenes o los archivos css y si la ruta se cambia, los archivos no se encontraran
+
+body/main/div/ul/li/a
 
 Relativo - 
 se indica una ruta especifica la cual puede comenzar desde cuaquier otro lado del dom
@@ -86,17 +86,17 @@ sin necesidad de iniciar por el body
 - se puede escribir de varias formas 
 
 funciones para construir xpath
-- contains() - se utiliza cuando el valor de un atributo cambia dinamicamente- puede encontrar
-un elemento por su texto total o parcial
+
+- contains() - evalua si un atributo contiene una subcadena
 
 Xpath = //*[contains(@type,'sub')]
+// aca le estamos preguntando si el texto contiene la palabra 'here'
 Xpath = //*[contains(text(),'here')]
 Xpath = //*[contains(@href,'seleniumease.com')]
 
-- starst-with() - esta funcion sirve para localizar valores cambiantes tales como id, por 
-ejemplo si inicia en p, p1, p2, p3, p4, p5, p6
-tambien sirve para valores estaticos
+- starst-with() - evalua si una cadena comienza con un valor especifico
 
+// aca le estamos preguntando si el id del label inicia con 'message'
 Xpath=//label[stars-with(@id,'message')]
 
 - OR - en esta expresion se evaluan dos condiciones
@@ -115,7 +115,7 @@ contiene el elemento deseado
 Xpath=//td[text()='message')
 
 ------------------ Metodos Xpath axes ----------------------------------
-- following - selecciona todos los nudos hijos del nodo actual,
+- following - selecciona todos los nodos hijos del nodo actual,
 se comporta como un array
 
 aqui nos devolveria un array

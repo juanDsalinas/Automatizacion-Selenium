@@ -1,0 +1,74 @@
+------------------------------ Esperas ---------------------------------
+cuando el navegador carga elemento en la pagina estas puede
+aparecer en diferentes intervalos de tiempo, para indicarle a selenium
+que debe esperar por estos elementos, a estos se les llama esperas, 
+las cuales pueden ser de DOS FORMAS -
+
+------------------------------ implicitas y explicitas ---------------------------------
+implicit wait - le indica al navegador que espere cierto tiempo antes de que nos 
+arroje una excepcion, por defecto implicit wait viene con una espera de 0 
+puede tomar cualquier elemento web 
+
+WebDriver wait = new WebDriverWait(driver, 5);
+boolean bandera = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='loading']//img")));
+
+Explicit wait - le indicamos al controlador web que espere ciertas condiciones o un tiempo maximo, 
+ademas utilizamos ExpectedConditions.CONDICIONES QUE ESTAMOS ESPERANDO 
+
+WebDriver wait = new WebDriverWait(driver, 5);
+boolean bandera = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='loading']//img")));
+
+- FluentWait es un tipo de espera explicito pero mas flexible ya que 
+	- consta de 3 metodos importantes los cuales son - 
+		- withTimeout - el cual nos indica el tiempo de espera maximo
+		- pollingEvery - el cual nos indica cada cuanto se va a evaluar si ya se cumplio la condicion
+		- ignoring - indica una condicion personalizada que se debe ignorar durante la espera 
+
+
+-------------------------------Diferencias entre espera implicita y espera explicita-----------------------------------------
+- la espera implicita se aplica a todos los elementos de la pagina web
+- la espera implicita no necesita que se le especifiquen excepciones 
+
+- la espera explicita se aplica solo a ciertos objetos bajo una condicion especificada por nosotros 
+- la espera explicita necesitamos especificar que condicion esperamos a que se cumpla 
+
+
+--------------------------------------- Ventanas emergentes -------------------------------------
+handle = nombre
+
+iframe = es como una ventana dentro de otra 
+
+frameset = es como un div padre el cual se divide en iframes los cuales serian
+divs hijos, esto se hace mas que todo para que un frame se quede estatico(barra de navegacion)
+y que el otro si cambie su contenido(contenido)
+
+ pero mas pequeña, como un mapa en google maps
+- getWindowHandle() - especificamos que queremos obtener el handle del emento
+- getWindowHandles() - especificamos que recolecto todos los handle de todas las paginas abiertas
+- switchTo().window(String Hadle or name) - cambia el enfoque del webdriver a una ventana especifica, es 
+como devolverse 
+
+driver.switchTo().window("windowName");
+
+- switchTo().frame(frameElement) - cambia el enfoque del webdriver a un iframe especifico
+- switchTo().defaultContent() - se utiliza para devolverse una vez que ingresamos a un iframe
+
+tambien se puede iterar sobre cada venta de la siguiente manera : 
+
+for (String handle : driver.getWindowHandles())
+{                            
+  driver.switchTo().window(handle);
+} 
+
+------------------------------------- Alertas o alert en Js ---------------------------------------------
+
+driver.switchto().alert.accept();          //Se usa para aceptar una alerta
+driver.switchto().alert.dismiss();          //Se Usa para cancelar una alerta
+driver.switchto().alert.getText();          //Se usa para obtener el texto de una alerta
+driver.switchto().alert.sendKeys("Text");          //Se usa para ingresar texto en una alerta
+
+pueden haber alertas basicas las cuales son de la siguiente manera : 
+switchTo().alert() - las cuales pueden venir de 3 maneras diferentes :
+			- con boton aceptar
+			- con boton aceptar y cancelar
+			- con caja de texto mas boton de aceptar y cancelar

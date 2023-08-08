@@ -1,0 +1,67 @@
+creamos un nuevo proyecti tipo GRADLE :
+nos devolvera una esctructura de la cual tendremos que 
+revisar que se encuentren los siguientes archivos en ella
+
+buid-gradle sin extension - si la encuentro la elimina porque 
+eso genera error en las dependencias 
+
+en src tenemos que tener dos carpetas las cuales son : 
+main - test - en cada una debe estar incluida una carpeta
+denominada "java"
+
+NOTA - SI NO ESTA ASI LO CREO MAL 
+NOTA - cuando dicen directorios se refieren a carpetas ok?
+
+ahora en el directorio de main - java creamos las carpetas
+las cuales representaran nuestro patron de diseño, en nuestro
+caso POM o Project Object Modell 
+
+necesitaremos como minimo los siguiente paquetes : 
+pages, steps, ui y todos los que consideremos necesarios, ademas
+que es una buena practica crear el paquete utils paara guardar alli
+
+las clases con funcionalidad transversales 
+- ¿que quiere decir esto de arriba?
+pues facilmente nos indica que aqui iran las clases con funcionalidades
+que se puedan aplicar a otras automatizacion, como una herencia para que 
+herede todo lo necesario
+
+ahora creamos un archivo llamado serenity.properties el cual le indicara a
+selenium como ejecutar los test
+
+ademas que el directorio test/java/googleTranslate - crearemos dos paquetes 
+los cuales seran llamados runners y stepdefinitions
+
+ademas que en el directorio test/resources crearemos dos carpeta, la primera
+la llamaremos driver y en ella guardaremos el driver que descargamos y la 
+segunda la llamaremos features en este directorio guardaremos todos los archivos
+.feature que estaran en lenguaje Gherkin(los cuales son las historias de usuario)
+las cuales constan de Inicio(Given) acciones a realizar(When) y el resultado(Then)
+
+ahora instalamos una extension llamada 'Cucumber for java' la cual misticamente no 
+encontre y me toco instalar otra con un + al final, pero no hay pedo, funciona ahora
+en el directorio test/resources/features - creamos un archivo con el nombre de la 
+historia de usuario y lo escribimos en lenguaje gerkin 
+
+ahora en el directorio test/java/stepdefinitions - creamos una clase con el nombre de la
+historia de usuario + stepDefinitions(TODO EN CamelCase) asi -> GoogleTranslateStepDefinitions
+
+esta clase contendra todo los metodos que correspondan a cada uno de los steps del features
+
+
+
+
+
+
+
+ 
+
+NOTA : a la hora de descargar el driver tenemos que crear una variable de entorno
+llamada 'webdriver' para que? - Ni idea pero toca 
+
+
+
+
+
+
+

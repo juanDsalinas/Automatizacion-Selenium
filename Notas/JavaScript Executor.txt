@@ -1,0 +1,32 @@
+--------------------- Que es Js Executor ----------------------
+es una interfaz de selenium la cual permite
+interactuar con el DOM mediante codigo JS
+
+se utiliza en cosas donde el mismo DOM impide la
+interaccion con algunas cosas 
+
+------------------------ Como implementarlo ---------------------
+creamos un objeto de tipo JS executor luego se llama al
+metodo executeScript y por se le pasa de argumento el 
+codigo Js que deseamos utilizar 
+
+con Js executer podemos hacer muchas cosas tales como : 
+- obtener atributos de los elementos
+- direccionar a otra pagina 
+- generar una ventana de alerta
+- dar click a un elemento
+- actualizar el navegador
+- desplazarse por la pagina con coordenadas
+- modificar el tamaño de la pagina
+- añadir un elemento al DOM
+- marcar un checkBox
+- modificar el estilo de los elementos HTML 
+
+
+OJO - Utilizarlo con cuidado 
+con la instancias de Js Executor que en realidad es una interfaz
+podemos hacer todo lo mismo que Js nos permite, es una gran ventaja
+a la hora de modificar el DOM
+
+ 
+

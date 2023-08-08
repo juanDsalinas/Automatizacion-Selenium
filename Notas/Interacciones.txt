@@ -1,0 +1,94 @@
+con selenium podemos simular las interaccion del mouse tales como
+para el uso de las acciones del mouse es necesario instanciar la clase
+Actions
+
+- click() - literalmente es dar click 
+- contextClick() - simula el click derecho 
+- doubleClick() - simula un doble click del mouse
+- clickAndHold() - dar un click sin soltar
+- dragAndDrop(inicio,fin) - da click sin soltar en la posicion indicada y lo 
+arrastra hasta la posicion final (SIN SOLTAR) - Funciona solo si encuentra el elemento, si no no 
+- dragAndDropBy(elemento,x horizontal, y vertical)(SIN SOLTAR)
+
+estas dos ultimas hacen lo mismo, solo que la primera necesita identificar el 
+elemento a donde se desplazara el elemento, en cambio la ultima NO
+
+Actions action = new Actions(driver);
+WebElement sourceEle = driver.findElement(By.id("draggable"));
+WebElement targetEle = driver.findElement(By.id("droppable"));
+action.dragAndDrop(sourceEle, targetEle).build().perform();
+
+- moveByOffset(x,y) - mueve el mouse a las coordenadas dadas
+
+- moveToElement(elemento) - posiciona el mouse en la mitad de un elemento 
+
+- release() - suelta un elemento previamente seleccionado(es util combinarlo con dragAndDrop() o con dragAndDropBy())
+
+- keyDown() - simular una tecla modificadora(CONTROL,MAYUS,ALT)
+se utiliza de la siguiente manera :
+
+Actions actionProvider = new Actions(driver);
+Action keydown = actionProvider.keyDown(Keys.CONTROL).sendKeys("a").build();
+keydown.perform();
+
+Teoricamente estamos mandando una "A" mayuscula 
+
+- keyUp() - libera una tecla por ejemplo el shift, mayusculas entre otros - levantar la tecla
+
+- sendKeys() - envia texto a un input especifico, por lo general los inputs 
+
+- build() - reune todas las acciones por separado en una sola y con perform() 
+logramos que se ejecuten
+
+- Keys.TECLAESPECIAL - para enviar teclas que no son texto se hace con el metodo
+Keys
+
+Para obtener el valor de un elemento lo lograremos con getAttribute("value")
+el cual es a traves de la clase y lo podemos mostrar mas adelante 
+
+para seleccionar radio buttons - con el metodo click()
+para verificar si un radio button se encuentra seleccionado o no
+es con el metodo isSelected() 
+
+btn.isSelected() - devuelve un valor booleano - True o False 
+
+--------------- Listas desplegables ---------------
+
+- selectByVisibleText() - le pasamos un parametro y selecciona la opcion que concuerda
+- selectByIndex() - le pasamos como argumento una posicion tal como si fuera un array y el 
+selecciona el valor que se encuentre en esa posicion
+- selectByValue() - le pasamos como argumento un valor el cual el busca en los elementos y 
+selecciona cuando encuentre una coincidencia
+
+seleccionar de varias formas incluidas todas : 
+
+@FindBy(xpath ="//select[@class='custom-select browser-default']")
+	WebElement multipleDropDown;
+
+	public void multileDropDown(WebDriver driver) {
+		
+		Select multipleSelect = new Select(multipleDropDown);
+		multipleSelect.deselectAll();
+		multipleSelect.selectByVisibleText("One");
+		multipleSelect.selectByVisibleText("Three");
+	}
+
+------------------------------ Recorrer Tablas ----------------------------------------- 
+para buscar valores entre una tabla se debe recorrer la tabla y buscar el valor
+iniciando por filas y columnas 
+
+----------------------------------- Ventajas de POM ----------------------------------
+reducir la duplicidad de codigo
+cuantos elementos basicos componen a selenium - 4
+- librerias cliente
+- protocolo Json wire(API)
+- controlador
+- browser 
+
+
+
+
+
+
+
+

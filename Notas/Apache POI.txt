@@ -1,0 +1,86 @@
+Apache POI - es una biblioteca de Java para leer documentos
+
+------------------------------ Leer archivos de Excel --------------------------------
+se deben crear objetos de tipo FILE para poder abrir los archivos
+y un objeto de tipo FileInputStream para poder leerlos 
+
+File file = new File(filePath+"\\"+fileName);
+FileInputStream inputStream = new FileInputStream(file);
+
+ahora buscamos la extension del archivo haciendo uso de substring de 
+la siguiente manera : 
+
+String fileExtensionName = fileName.substring(fileName.indexOf("."));
+
+y ahora buscamos el tipo de archivo donde dependiendo de la extension se crea una instancia diferente : 
+
+Workbook workbook = null;
+if(fileExtensionName.equals(".xlsx")){
+	    	workbook = new XSSFWorkbook(inputStream);
+	    } else if(fileExtensionName.equals(".xls")){
+	    	workbook = new HSSFWorkbook(inputStream);
+	    }
+
+se lee la pestaña dentro del archivo de excel 
+
+Sheet sheet = workbook.getSheet(sheetName);
+
+se busca el numero de filas 
+
+int rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
+
+creamos un ciclo for para recorrer filas y columnas
+
+for (int i = 0; i < rowCount+1; i++) {
+	        Row row = sheet.getRow(i);
+	        for (int j = 0; j < row.getLastCellNum(); j++) {
+	            System.out.print(""+row.getCell(j).getStringCellValue()+"|| ");
+	        }
+	        System.out.println();
+	    }
+
+------------------------ escribir archivos de excel ------------------------------------------------
+se realiza igual que el anterior procedimiento : 
+instanciamos File and FileInput algo
+buscamos la extension del archivo
+dependiendo de la extension instanciamos un objeto
+leemos la pestaña
+
+ahora obtenemos la primera fila del archivo 
+Row row = sheet.getRow(0);
+
+creamos una nueva fila y se la agregamos a la pestaña
+Row row = sheet.getRow(0);
+Row newRow = sheet.createRow(rowCount+1);
+
+creamos un bucle for sobre la celda
+for(int j = 0; j < row.getLastCellNum(); j++){
+        Cell cell = newRow.createCell(j);
+        cell.setCellValue(dataToWrite[j]);
+    }
+
+cerramos el inputStream 
+inputStream.close();
+
+para escribir creamos un objeto de tipo FileOutputStream para escribir en el archivo,
+ademas de luego utilizar el objeto que acabamos de instanciar para escribir
+workbook.write(outputStream);
+
+y por ultimo cerramos el OutputStream
+outputStream.close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

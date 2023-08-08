@@ -1,0 +1,54 @@
+Behavior Driver Development
+--------------------- BDD ---------------------
+se denomina asi a la construccion 
+de un software basado en ejemplos
+
+Esos ejemplos son especificaciones de que
+debe hacer el sistema, para disponer un lenguaje
+en comun entre el testingo, validacion y desarrollo
+
+-------------------- Lenguaje Gherkin -----------------------------------
+defina la estructura y sintaxis para la descripcion de las pruebas para que
+sean entendidas para todo el mundo, y de esta manera creamos documentacion 
+que describe el comportamiento del sistema 
+
+- Componentes 
+ - Feature(Caracteristica) - contiene un listado de Scenarios que componen
+	el feature ademas de una descripcion de como se deben realizar y que
+	se debe realizar - describe la funcionalidad que se va a testear 
+ - Scenario - es una lista de pasos(Steps) basados en palabras clave -
+	- Given(Dado|Dada|Dadas|Dados)
+	- When(Cuando)
+	- Then(Entonces)
+	- But(Pero) o And(Y)
+	- Background(Antecedentes) - precondiciones para el Scenario
+	- Scenario Outline - es un esquema para introducir variables y simplificar
+	     pruebas repetitivas 
+
+--------------------------------------- Maven -------------------------------------------------
+Maven es una herramienta para gestionar proyecto la trabaja construyendo bajo el formato XML
+es decir, simplifica los procesos de compilar y generar 
+
+Antes de Maven los developers para construir los ejecutables de los proyectos lo hacian de forma manual
+e imaginate el desastre que era para ellos pensar en que debian compilar y que No
+
+---------------------------------------------- GRADLE -----------------------------------------------
+
+utiliza el lenguaje groovy en vez de XML como lo hace Maven
+
+----------------------------------------- Serenity BDD -------------------------------------------------
+herrramienta que centraliza los test, indicando el estado funcional de esto en tiempo real, ademas que 
+sirve como documentacion "Viva" 
+
+tambien trabaja con Cucumber para la definicion de escenarios y su implementacion 
+
+
+
+
+
+
+
+
+
+
+
