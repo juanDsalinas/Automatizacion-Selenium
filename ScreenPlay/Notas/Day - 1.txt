@@ -1,0 +1,57 @@
+ScreenPlay - patron de diseño 
+principios SOLID - mejor desarrollo y practicas 
+
+- Given - precondicion - que se necesita para que 
+el test se realice
+
+- When - Accion del usuario para realizar el test
+
+- Then - el resultado esperado 
+
+- Cucumber permite que los feature(historias de usuario lo entienda la pc)
+
+creamos un feature por todos los casos de prueba del modulo de login
+
+--------------------------------------------------------------------------------------------------------
+@Managed - indicamos el driver a utilizar
+	WebDriver hisBrowser;
+
+@Before - ejecutar pasos antes de que se ejecuten los del feature
+definimos esos pasos mediante un metodo(en el ejemplo setUp) 
+- como por ejemplo definir los actores y sus nombres 
+
+
+En screenplay utilizamos actores los cuales realizan acciones 
+La libreria Matchers es la que realiza las validaciones del resultado esperado
+con el Then 
+
+------------------------------ Carpetas del patron Screenplay ------------------------------------------
+- hooks - van los metodos de Before y After - solo si quiere, si no no
+
+- exceptions - capturamos las excepciones - cuando queremos que falle capturamos ese error y cambiamos el 
+contenido
+
+- integrations - cuando nos unimos con bds, nubes virtuales, docker y demas 
+
+- interactions - acciones repetitivas - hacer click 
+
+- models - guardar datos - credenciales y links and more
+
+- questions - aserciones - comparaciones de resultados - los resultados de los test los capturamos en cuestions y lo comparamos
+en el Then del escenario 
+
+- tasks - acciones para hacer una tarea - Logueo  - 
+	creamos una clase llamada Login a la cual se le implementa Task y se implementa los metodos 
+	de esa clase 
+
+- userinterfaces - capturamos los localizadores(Xpath)
+	creamos una clase llamada loginPage en la cual capturamos todo lo que vamos a utilizar 
+
+
+
+- utils - agregar archivos, manejos de robot, switch case and more 
+
+
+
+
+
