@@ -52,6 +52,24 @@ en el Then del escenario
 - utils - agregar archivos, manejos de robot, switch case and more 
 
 
+--------------------------------------------------------------- Que es ScreenPlay -------------------------------------------------------------
+es una mejora del POM - consiste en actores los cuales representan las interacciones de las personas 
+o sistemas externos 
+
+esta patron utiliza principios de la ingenieria de software mas especificos los 
+principios SOLID - aun mas especificamente el principio de responsabilidad Unica para
+mantener una mejor arquitectura a la hora de realizar los test 
+
+Screenplay favorece la composicion sobre la herencia, emplea el pensamiento del diseño
+dirigido por dominio para reflejar la pertenencia de las pruebas de aceptacion y lo dirige
+el uso efectivo de las capas de abstraccion 
+
+
+
+
+
+
+
 
 
 

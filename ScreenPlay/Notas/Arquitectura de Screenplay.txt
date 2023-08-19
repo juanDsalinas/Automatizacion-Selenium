@@ -1,0 +1,18 @@
+Las pruebas de screenplay se realizan mediante "Actores" los cuales
+cunetan con habilidades tales como navegar entre paginas, tambien pueden 
+verificar los resultados obtenidos, entre otros 
+
+los actores son los que realizan los test - son la representacion de los
+usuarios 
+
+los actores cuentan con habilidades las cuales permiten interactuar con el
+sistema 
+
+los actores realizan tareas las cuales se componen de acciones 
+
+
+
+
+
+
+

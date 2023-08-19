@@ -1,0 +1,48 @@
+el paquete net.serenitybdd.screenplay 
+contiene una serie de interfaces y clases 
+necesarias para realizar nuestra automatizacion
+las cuales son: 
+
+- Interfaces 
+
+- Ability - interfaz de marcador la cual indica que 
+un actor puede realizar una habilidad
+
+- Action - es obsoleta y actualmente se utiliza en su lugar 
+"interaction"
+
+- Interaction - indica que un ejecutable representa una accion
+en vez de una tarea empresarial(Task)
+
+- Performable - es utilizada para una tarea o accion que puede
+ser realizada por un actor 
+
+- Task - indica que un ejecutable es una tarea empresarial en 
+ves de una interaccion 
+
+- Question - Answer - indica como sera utilizado el resultado del
+sistema, donde se encuentra answer es como se va a manejar, podemos
+indicar que utilizaremos un string, un boolean, etc 
+
+
+
+- Clases 
+
+- Actor - en esta clase estan mapeados los metodos que puede realizar
+un actor, en este encontramos named, wasAbleTo y attemptsTo 
+
+- GivenWhenThen - en esta clase se manejan los metodos para realizar 
+las aserciones(Chequeos) del sistema 
+
+
+
+
+
+
+
+
+
+
+
+
+
