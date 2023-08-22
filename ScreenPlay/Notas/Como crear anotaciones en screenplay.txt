@@ -1,0 +1,34 @@
+como crear actores en screenplay
+
+la sintaxis es la siguiente
+Actor pepe = new Actor("pepe")
+lo que le pasamos como argumentos al 
+constructor es el nombre que va a tomar 
+
+de la manera como se especifica en arriba 
+tendremos inconvenientes 
+
+Actor santiago = Actor.named("Santiago")
+named es un factory method el cual sirve
+para crear objetos de diferentes maneras  
+raro si
+
+que es un metodo factory - 
+es una interfaz para crear objetos la 
+cual permite a las subclases alterar el
+tipo de objetos que se crean 
+
+cada vez que utilizamos un actor automaticamente
+se crea una instancia de este para poder utilizarlo
+
+--------------- otras maneras para crear actores ------------
+OnStage.theActor(actorName:"Santiago");
+OnStage.theActorCalled(requiredActor"Santiago");
+
+si no existe el actor lo crea y si existe cambia hacia
+la instancia de ese actor y sus correspondientes habilidades
+Ventajas - podemos tener multiples actores 
+
+
+
+

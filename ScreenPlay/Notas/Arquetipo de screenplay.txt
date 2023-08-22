@@ -1,0 +1,75 @@
+Es como un modelo en el cual se realizan las tareas de un mismo tipo
+podemos hacer que todos los proyectos que creemos utilicen una misma
+base 
+
+En src/main van todos los modelos, interacciones del actor y validacion
+En src/test van todos escenarios y la misma ejecucion de estos 
+
+ -------------------------------------------- Paquetes ----------------------------------------------------
+Models - puedes preguntarle cosas(informacion) para que te retorne, para eso sirven, es como modelar cosas,
+	por ejemplo si estamos probando una app de vuelos podemos mapear, las caracteristicas de los objetos
+	son los modelos que tu creas en este paquete  	
+	
+NOTA : las clases en el patron screenplay no necesariamente tienen que ser inmutables, tambien pueden ser mutables dependiendo 
+del analisis previo 
+
+- Exceptions - este paquete contiene las clases para manejar nuestras excepciones 
+	Error - problema grave - es algo con que una aplicacion no deberia intentar capturar
+	Excepcion -  es algo que el programa podria intentar capturar 
+
+- Utils - en este paquete encontramos las clases de utilizades(reutilizables) tales como formatear fechas, abrir archivos
+entre otros, estas contienen metodos estaticos, ademas de que no tienen estado
+y de estas no se puede crear una instancia, contienen muchos metodos 
+para reutilizar en la aplicacion 
+
+Sugerencias para construir las clases en el paquete utils -  
+
+	- Sugieren declarar la clase public y final, y tienen un constructor privado para evitar la creación de instancias.
+	  La palabra clave final evita la subclasificación y 
+	- puede mejorar la eficiencia en tiempo de ejecución. Debemos tener en cuenta que esto es una sugerencia depende del
+	 	diseño que construyamos hace que esta clase sea final
+	- La clase debe contener todos los métodos static y no debe ser declarada abstract (ya que eso implicaría que la clase 
+	 	no es concreta y debe implementarse de alguna manera)
+ 	- La clase debe recibir un nombre que corresponda a su conjunto de utilidades proporcionadas
+	- La clase no debe contener una clase anidada a menos que la clase anidada también sea una clase de utilidad
+	- Los métodos en la clase deben tener nombres apropiados
+	- Los métodos utilizados únicamente por la clase en sí deben ser privados
+	- Tengamos en cuenta que las clases Enums por estructura y mayor legibilidad del código las podemos agrupar en este paquete,
+	 	por lo que estas clases son excepciones que se tienen a las características ya mencionadas con anterioridad
+
+- las clases enums son la forma en la que guardamos clases especiales que cuentan con condiciones especiales y son mas faciles
+de buscar por sus propiedades 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+---- en el paquete userInterfaces unicamente mapeamos los elementos, siguiendo con el principio solid de responsabilida unica
+(teniendo en cuenta que en el pom en la clase pages mapeamos e interactuamos en la misma clase con los elementos, aqui se mapean
+en una sola clase y luego se realiza la interaccion en una clase aparte para poder cumplir con el principio SOLID)
+
+
+---- en el paquete tasks se encuentran las clases que describen los pasos, como dar click, rellenar informacion y demas, todas 
+estas interacciones implementan la interfas task 
+
+---- en el paquete questions se encuentran las clases que capturan el ultimo valor de las interacciones y poder comparar que la 
+prueba se realiza de manera exitosa o en que halla valido cheto todas las clases implemetan la interfaz Question<ANSWER>
+
+
+---- en el paquete stepdefinitions contienen las clases given, when y then las cuales nos permiten 
+relacionar los pasos y escenarios que creamos previamente en el feature con lenguaje gherkin con la 
+ejecucion de un task o de un question que cumplan con su respectiva descripcion, 
+
+---- en el paquete runners estan contenidas todas aquellas clases en las cuales se realiza la ejecucion 
+de los features 
+
+en los arquetipos son patrones de diseño que contiene ejecuciones de un mismo tipo 
+
+
+
+
+
+
+
+
+
+
+

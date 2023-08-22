@@ -1,0 +1,12 @@
+en la ruta src/main van todos los paquetes necesarios para la automatizacion
+tales como models, interaccion, validaciones y demas 
+
+en la ruta src/test van todos los paquetes necesarios para la ejecucion de los 
+escenarios, no poseen logica de programacion 
+
+el arquetipo es un patron o modelo sobre el cual se desarrollan todas las tareas
+del mismo tipo 
+
+
+
+

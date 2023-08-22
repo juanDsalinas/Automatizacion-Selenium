@@ -1,0 +1,60 @@
+Anotacion - son etiquetas que puedes ponerle ya sea a tus atributos,
+metodos, etc para indicarles que hacen cosas especiales, se denominan
+como @interface, podemos crear un metodo o atributo con default si asi
+lo deseamos 
+
+--------------------------------------- Anotaciones en serenity ---------------------------------
+@runwith - es como la persona que dirije una carrera de carros y mira que todas 
+las reglas se cumplan, tambien indica como se deben hacer las cosas(los test) 
+- configuraciones generales - sobre donde hacer - todo bajo el contexto de cucumber
+
+@CUCUMBEROPTIONS - es como las configuraciones para realizar los escenarios de pruebas,
+esta anotacion cuenta con todas tus preferencias sobre los test - para resumirlo le estamos
+diciendo que cosas hacer y como hacerlas 
+- configuraciones especificas - sobre como hacerlas - todo bajo el contexto de cucumber
+
+@MANAGED - es como la persona que administra y controla como se comporta el navegador web durante
+las pruebas - podemos especificarle como debe actuar, en que momento, si en pantalla completa, etc 
+
+<@Step> - es como se representa cada paso de una receta, paso uno hacer tal cosa, paso dos hacer esta
+otra y asi - a los steps damos una breve descripcion de como realizarlos por cada paso 
+
+@Subject - es como indicar en un correo a quien debe llegarle, es usado en la clase question para
+realizar las validaciones y lo que le pasamos es lo que en cierta forma debe buscar para la validacion 
+
+el método getSubject() de la interfaz Question - con estos lo que hacemos es que recibimos
+la opcion correcta y luego la verificamos con el resultado final, por ejemplo si queremos 
+saber que en el apartado de genero el genero "Masculino" funciona lo unico que tenemos que hacer es 
+pasarlo y probar si la automatizacion se realizo de manera correcta 
+
+@BEFORE - es como indicarle a la automatizacion que antes de ejecutarse vamos a realizar algunas acciones
+previas - algunas de estas acciones son: cambiar de actor, etc
+
+@AFTER - es como indicarle a la automatizacion que despues de ejecutarse vamos a realizar algunas 
+acciones- algunas de estas acciones son: cerrar el browser, etc
+
+
+
+podrias explicarme para que sirve la anotacion @AFTER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
