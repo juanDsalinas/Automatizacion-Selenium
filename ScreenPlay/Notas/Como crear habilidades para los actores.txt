@@ -1,0 +1,46 @@
+crear habilidades - 
+en este caso se implementa una habilidad para 
+consultar una base de datos
+
+creamos una clase llamada QueryDatabases en el 
+paquete ability e implementamos las interfaz ability
+
+factory method - 
+creamos un factory metod el cual es un metodo que 
+retorne una nueva instancia de la clase 
+
+ahora con el metodo <RefersToActor> necesitamos
+de asignarle la nueva habilidad que acabamos 
+de crear a nuestro actor 
+
+Validacion, Excepcion y Conexion 
+con el metodo (Actor actor) nombramos al actor para
+otorgarle una habilidad
+
+actor.WhoCan() busca si el actor cuenta con esa 
+habilidad
+
+RefersToActor y T - indicamos que al actor le estamos
+una habilidad mas no necesariamente tenemos que especificar
+cual y devolvemos al actor como objeto
+
+al crear un objeto siempre si o si necesitamos
+sobreescribir el metodo toString() el cual nos 
+indica en que momento de la ejecucion esta sucediendo
+"X" cosa
+
+¿Como Funciona eso de agregarle una habilidad a un actor?
+facil, como anteriormente creamos la clase QueryDatabase
+la cual contiene un metodo estatico llamado configDatabase
+que como al crear las habilidades trabajamos bajo el patron
+creacional Method factory deben ir privadas para todos, con 
+este patron creamos una instancia de este metodo y con el 
+metodo as() se lo asignamos a un actor para que durante la
+automatizacion puede realizar una serie de interacciones o 
+tareas 
+
+
+
+ 
+
+

@@ -1,0 +1,19 @@
+en la anotacion @RunWith definimos el runner para poder
+ejecutar el test 
+
+en la etiqueta @Step definimos com ose visualiza la 
+descripcion de la interaccion o tarea que esta 
+realizando el actor 
+
+el patron creacional Factory method, se usa para
+reemplazar constructores, y nos facilita la creacion
+de instancias de una clase 
+
+para crear interacciones necesitamos crear una clase
+que nos indique como estas actuan
+
+targets son los elementos con los cuales nosotros 
+interactuamos para poder realizar acciones o tareas
+algunos ejemplos son: campos de un formulario, el
+boton de envio, etc
+

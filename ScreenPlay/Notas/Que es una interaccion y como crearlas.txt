@@ -1,0 +1,40 @@
+los actores realizan tareas, 
+esto indica que cada interaccion
+es diferente, serenity nos brinda
+la interaccion en forma de interfaz
+para asi poder definir su comportamiento
+ 
+una tarea es un conjunto de interacciones
+por ejemplo: iniciar sesion, completar un 
+formulario o simplemente realizar una compra,
+estas tareas estan compuestas por interacciones
+como enviar informacion a un campo, dar click en 
+un boton, etc
+
+para realizar una interaccion o task se hace de la
+siguiente manera : actor.attemptsTo() o actor.wasAbleTo()
+la diferencia entre estas dos es que actor.wasAbleTo() es 
+mas usado cuando usamos Given o escenarios Background,
+actor.attemptsTo() es mas usado para When esto haciendo 
+referencia a los test(features) escritos en lenguaje Gherkin
+
+
+Background en los features hacen referencia a una serie de pasos
+que quiero que se ejecuten antes de cada Scenario, como por ejemplo
+un Logueo de usuario, primero que se ejecute antes de agregar un item
+al carrito y luego que se vuelva a ejecutar para realizar la compra
+
+un objeto performable en una representacion de una accion que el actor
+debe realizar, puede ser una tarea implementada como una clase de la 
+interfaz task o puede ser una interaccion implementada como clase 
+que a su vez implementa la interfaz interaction 
+
+Cuando creamos interacciones necesitamos que herede performable para indicar que realizan algo
+
+Pero si claramente sabemos que tenemos que utilizar la interfaz performable
+porque implementamos la interfaz Interaction, facil, por que la clase interaction
+hereda las interfaces Action y Performable, 
+
+las interacciones mas usadas son: Clic, Enter, SelectFromOptions y Open - para
+saber mas acerca de estas mirar el word :)
+

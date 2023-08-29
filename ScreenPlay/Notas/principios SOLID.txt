@@ -1,0 +1,38 @@
+Principios SOLID - Desarrollo sostenible y escalable
+de software, ademas de ser famosos por su arquitectura
+
+- principio de Responsabilidad Unica - 
+la "S" de su acronimo se la debemos a Single 
+Responsability Principle(SRP) - este principio
+nos dice que una clase solo debe tener una 
+razon para cambiar - el principio fomenta que 
+reunamos todas las cosas que cambian por la misma
+razon y aislemos las que cambian por otras razones 
+
+tener una clase que cuente con metodos para consultar 
+la base de datos y para consultar instancias de la clase
+viola este principio
+
+en vez de eso deberiamos crear una clase para todo lo de 
+bd y otra para todo lo de carro asi logramos hacerlo lo 
+mas sostenible posible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

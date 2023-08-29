@@ -1,0 +1,31 @@
+los target representan los elementos de una web
+es como mapear los pageObject en el patro de POM 
+pero de forma mas limpia y se realiza de la misma
+manera
+
+tambien podemos "parametrisar" los targets para
+que no sean tan rigidos sino que puedan variar un 
+poco
+
+ejemplo de un xpath relativo parametrisado : 
+//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]
+
+en este ejemplo siempre vamos a escoger el segundo
+producto que nos devuelva la busqueda que realizamos
+ya sea ropa, comida, etc
+
+el of en la clase abstracta Target nos ayuda a crear
+por decirlo de alguna manera variables cambiables a
+lo largo de la automatizacion y como todo esto se
+realiza mientras es programa se ejecuta, a esto se
+le llama RunTime
+
+
+
+
+
+
+
+
+
+

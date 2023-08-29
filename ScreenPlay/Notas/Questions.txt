@@ -1,0 +1,112 @@
+para crear questions se realiza de 3 formas diferentes : 
+Mirar el word para verificar cada forma, 
+ademas las funciones lambda son funciones anonimas
+las cuales no necesitan mucho para funcionar : 
+un ejemplo seria el siguiente : 
+
+argumentos -> operaciones
+(a,b) -> a + b
+
+questions - 
+¿Cual es el navegador por defecto que utiliza Serenity, si no se especifica con cual navegador se va a trabajar?
+
+Pregunta 1Seleccione una:
+
+a.
+Internet Explorer.
+
+
+b.
+Opera.
+
+
+c.
+Firefox.
+
+
+d.
+Chrome.
+
+
+
+
+Se va a utilizar la Interaction Open para abrir una página web en un URL, ejemplo: santiago.wasAbleTo(Open.browserOn().the(GoogleHomePage.class)); La base GoogleHomePage. ¿Qué requisito mínimo se debe cumplir para lograr la interacción?
+Pregunta 2Seleccione una:
+
+a.
+Debe usar la anotación @DefaultUrl.
+
+
+b.
+Debe heredar la clase WebElement.
+
+
+c.
+Debe heredar la clase Screenplay.
+
+
+d.
+Debe heredar la clase PageObject.
+
+
+
+
+¿Qué pasa si utilizo la interacción Open sin tener la habilidad de navegar en la Web?
+
+Pregunta 3Seleccione una:
+
+a.
+La automatización abre el navegador sin problema.
+
+
+b.
+Se arroja una excepción de RunTime especifcando que el actor no tiene la habilidad de navegar en la web.
+
+
+c.
+Se añade default y se agrega que valor por defecto tiene
+
+
+d.
+Asigna el valor del elemento lo hacemos dentro de los paréntesis y especificamos los elementos al cual queremos asignar el valor
+
+
+
+
+Si se requiere ejecutar la automatización si se realiza BDD con Cucumber, ¿que clase se debería usar en la anotación @RunWith?
+Pregunta 4Seleccione una:
+
+a.
+SerenityRunner.
+
+b.
+Cualquier clase que herede la clase Cucumber.
+
+c.
+CucumberWithSerenity.
+
+
+
+
+¿Para qué sirve la anotación @Managed?
+
+
+Pregunta 5Seleccione una:
+
+a.
+Para manejar la automatización.
+
+
+b.
+Para marcar un campo WebDriver e indicar que driver se va utilizar.
+
+
+c.
+Visualiza la descripción de la interacción o tarea que esta realizando el actor en la evidencia
+
+
+d.
+Funciona como la anotación @Step pero es usada para clases Question.
+
+
+

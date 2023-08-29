@@ -6,18 +6,24 @@ NOTA : serenity tiene dos habilidades primordiales
 navegar en la web y llamar Api's 
 
 para poder interactuar con el navegador se necesita 
-habilitar al actor - ver mas en el word 
+habilitar al actor - ver mas en el word - en el apartado
+de "Como otorgar una habilidad a un actor "
+
+settear == agregar habilidades a un actor 
 
 como otorgar una habilidad a un actor - 
 el metodo whoCan() recibe instancias de clases
-que tiene implementada la interfaz
-
-ability, esta interfaz permite validar si un
+que tiene implementada la interfaz ability,
+esta interfaz permite validar si un
 usuario tiene la habilidad, si no se puede 
 crear la forma de arrojar una excepcion de RunTime 
 
 otra forma de settear habilidades en screenplay es de 
 la siguiente manera : mirar el word 
+
+para saber mas acerca de ejemplos de settear
+habilidades mirar el word en la pagina 9
+
 
 
 YUAN INDUSTRUIES 

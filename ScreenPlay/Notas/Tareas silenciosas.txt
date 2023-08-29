@@ -1,0 +1,28 @@
+las tareas silenciosas son tareas que no necesitamos
+que queden registradas en el informe de serenity, como
+limpiar data de la bd, ejecutar data para un test, etc
+
+para lograr que dichas tareas No se muestren en el 
+informe de tareas implementamos la interfaz
+CanBeSilent esta interfaz solo tiene el metodo
+isSilent(), este determina si la tarea aparece en
+el informe o no 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

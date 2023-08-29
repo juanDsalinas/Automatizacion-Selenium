@@ -6,12 +6,14 @@ lo que le pasamos como argumentos al
 constructor es el nombre que va a tomar 
 
 de la manera como se especifica en arriba 
-tendremos inconvenientes 
+tendremos inconvenientes y tendremos que realizar 
+configuraciones para su correcto funcionamiento,
+mejor hagamoslo de la siguiente manera : 
 
 Actor santiago = Actor.named("Santiago")
+
 named es un factory method el cual sirve
 para crear objetos de diferentes maneras  
-raro si
 
 que es un metodo factory - 
 es una interfaz para crear objetos la 
