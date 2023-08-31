@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/buyAmazon.feature",
         // esto indica el formato en como queremos que se conviertan los steps de los feautures
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        // indicamos donde ponemos esos escenarios para agregarle pasos
+        // indicamos donde ponemos esos escenarios para agregarle pasos(stepdefinitions)
         glue = "com.BuyAmazon.stepdefinitions"
 
 )

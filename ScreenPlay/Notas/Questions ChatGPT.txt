@@ -1,0 +1,174 @@
+Anotaciones de screeenplay - 
+@runwith - es junit en esta definimos
+la clase runner y tenemos dos opciones
+de inicializarla, si con 
+cucumberwith serenity o con 
+serenityrunner
+- toca especificar sobre que va a correr
+@cucumberoptions - como va a correr
+
+
+recuerda, con forme a mis respuesta de la siguiente
+pregunta tu me diras si es correcta y si no, 
+dame pistas, no la respuesta ahora te 
+paso esta 
+
+
+QUESTIONS FOR LATER 
+
+Pregunta 6: En Screenplay, ¿qué se coloca en el método performAs() de una clase que implementa la interfaz Task?
+
+a. La lógica para interactuar con los elementos de la interfaz de usuario.
+- b. La descripción de la tarea que se está realizando.
+c. La configuración de las habilidades del actor.
+d. El mapeo de los elementos de la página.
+
+
+Pregunta 7: ¿Qué función cumple la anotación @Subject en Screenplay?
+
+a. Indicar el actor que está realizando una tarea.
+b. Establecer el texto que se mostrará en la evidencia.
+c. Identificar los elementos de la página que serán interactuados.
+- d. Definir la descripción de una pregunta (Question) en la evidencia.
+
+
+Pregunta 9: ¿Cuál es el propósito principal de utilizar la anotación @Step en el patrón de diseño Screenplay?
+
+- a. Indicar que un método es un paso en un escenario de BDD.
+b. Crear una nueva instancia de un objeto.
+c. Definir una nueva habilidad para el actor.
+d. Establecer una relación entre una pregunta y una acción.
+
+
+Pregunta 5: ¿Cuál de las siguientes afirmaciones es cierta acerca de las clases Page Objects en el patrón Screenplay?
+
+a. Las clases Page Objects son exclusivas de Cucumber y no se usan en el patrón Screenplay.
+b. Las clases Page Objects son utilizadas para definir las interacciones en el patrón Screenplay.
+c. Las clases Page Objects son utilizadas para definir las preguntas en el patrón Screenplay.
+d. Las clases Page Objects son utilizadas para modelar las páginas o componentes de la interfaz de usuario en el patrón Screenplay.
+
+
+Pregunta 5: En el patrón de diseño Screenplay, ¿qué objeto se encarga de definir una interacción que el actor puede llevar a cabo en la automatización?
+
+a. Step Definition
+b. Page Object
+c. Interaction
+d. Task
+
+
+Pregunta 2: En el patrón de diseño Screenplay, ¿cuál es el propósito principal de las clases Step (pasos)?
+a. Definir la estructura de las pruebas de aceptación.
+b. Realizar la interacción con los elementos de la interfaz de usuario.
+c. Representar los objetos de dominio en el sistema.
+d. Establecer las configuraciones de las anotaciones de Serenity.
+
+
+Pregunta 4: En el patrón Screenplay, ¿cuál de las siguientes afirmaciones es correcta sobre las clases de tipo Question?
+a. Las clases Question no pueden recibir parámetros ni realizar cálculos.
+b. Las clases Question son utilizadas únicamente para definir interacciones con la base de datos.
+c. Las clases Question son siempre clases abstractas.
+d. Las clases Question se utilizan para consultar y verificar información del sistema bajo prueba.
+
+
+Pregunta 5: En el patrón Screenplay, ¿cuál es el propósito principal de las clases llamadas "Task"?
+a. Representar interacciones del usuario con la interfaz de usuario.
+b. Definir la lógica de negocio y las reglas de negocio del sistema.
+c. Realizar consultas y verificar información del sistema bajo prueba.
+d. Crear conexiones a bases de datos y gestionar transacciones.
+
+
+Pregunta 7: En el patrón de diseño Screenplay, ¿qué función cumple la anotación @Step?
+a. Define los pasos de ejecución de un escenario en BDD.
+b. Indica que una clase es un Page Object.
+c. Proporciona la descripción de una interacción o tarea en la evidencia.
+d. Crea un nuevo actor para ejecutar una interacción.
+
+
+Pregunta 8: En el patrón de diseño Screenplay, ¿qué representan las clases "Actions" y "Performables"?
+a. Clases que definen las interacciones del actor con la interfaz gráfica.
+b. Clases que representan los resultados esperados en las pruebas.
+c. Clases que gestionan los datos de las preguntas en las pruebas.
+d. Clases que definen los pasos de ejecución de los escenarios en BDD.
+
+
+Pregunta 1: ¿Cuál de los siguientes NO es un componente principal del patrón de diseño Screenplay?
+
+a. Actor
+b. Interaction
+c. PageObject
+d. Question
+
+
+Pregunta 5: ¿Qué método se utiliza en Screenplay para ejecutar una tarea o interacción?
+
+- a. wasAbleTo()
+b. should()
+c. performs()
+d. withAbility()
+
+
+Pregunta 6: ¿Cuál de las siguientes afirmaciones es cierta acerca de las Actions en el patrón Screenplay?
+
+a. Las Actions son equivalentes a los métodos de PageObjects en Selenium.
+b. Las Actions son la forma en que se manejan las aserciones en Screenplay.
+- c. Las Actions representan tareas o interacciones que realiza un Actor.
+d. Las Actions solo se pueden ejecutar una vez por prueba.
+
+
+Pregunta 7: ¿Cuál de las siguientes afirmaciones es cierta acerca de las Questions en el patrón Screenplay?
+
+a. Las Questions se utilizan para crear PageObjects en Selenium.
+b. Las Questions son equivalentes a las aserciones en Screenplay.
+c. Las Questions son una forma de realizar interacciones en Screenplay.
+d. Las Questions se utilizan para obtener información del sistema bajo prueba.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

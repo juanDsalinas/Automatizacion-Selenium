@@ -11,7 +11,6 @@ tendremos inconvenientes
 Actor santiago = Actor.named("Santiago")
 named es un factory method el cual sirve
 para crear objetos de diferentes maneras  
-raro si
 
 que es un metodo factory - 
 es una interfaz para crear objetos la 
@@ -27,7 +26,8 @@ OnStage.theActorCalled(requiredActor"Santiago");
 
 si no existe el actor lo crea y si existe cambia hacia
 la instancia de ese actor y sus correspondientes habilidades
-Ventajas - podemos tener multiples actores 
+
+algunas ventajas sobre esto es que podemos tener multiples actores 
 
 
 
