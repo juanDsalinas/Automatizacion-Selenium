@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">screenplaycasoestudio</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="551eed386cb6bbfa8048113172c6ca94fb124259baa2cca9d76fbf77c04c2cb8.html">Implementaci&oacute;n Automatizaciones Sobre La P&aacute;gina Demoqa</a></span>
+                > <span class="truncate-60"><a
+                    href="0270ab54f471cb5caee2ef30d6f49c54931ed6db8bcde7405d835423b2ce5567.html">Escenario </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-11-2021 14:44</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Implementación Automatizaciones Sobre La Página Demoqa </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario de la página<br />
+Deseo interactuar con las diferentes características<br />
+Para mejorar mis skills de automatizador
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Escenario
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'<br>Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos<br><table class='embedded'><thead><th>First Name</th><th>&lt;First Name&gt;</th></thead><tbody><tr><td>Last Name</td><td>&lt;Last Name&gt;</td></tr><tr><td>Email</td><td>&lt;Email&gt;</td></tr><tr><td>Gender</td><td>&lt;Gender&gt;</td></tr><tr><td>Mobile</td><td>&lt;Mobile&gt;</td></tr><tr><td>Date of Birth</td><td>&lt;Date of Birth&gt;</td></tr><tr><td>Subjects</td><td>&lt;Subjects&gt;</td></tr><tr><td>Hobbies</td><td>&lt;Hobbies&gt;</td></tr><tr><td>Current Address</td><td>&lt;Current Address&gt;</td></tr><tr><td>State</td><td>&lt;State&gt;</td></tr><tr><td>City</td><td>&lt;City&gt;</td></tr></tbody></table><br>Entonces Puedo ver el mensaje de agradecimiento y mis datos en pantalla<br><table class='embedded'><thead><th>First Name</th><th>&lt;First Name&gt;</th></thead><tbody><tr><td>Email</td><td>&lt;Email&gt;</td></tr><tr><td>Mobile</td><td>&lt;Mobile&gt;</td></tr><tr><td>Date of Birth</td><td>&lt;Date of Birth&gt;</td></tr><tr><td>Subjects</td><td>&lt;Subjects&gt;</td></tr><tr><td>Current Address</td><td>&lt;Current Address&gt;</td></tr><tr><td>State</td><td>&lt;State&gt;</td></tr><tr><td>City</td><td>&lt;City&gt;</td></tr><tr><td>Gracias</td><td>&lt;Gracias&gt;</td></tr></tbody></table></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8106bef4dd56412cbb485d819385086b0e6ce710b750271616617ef738924cd4.png" title=" Example 1: {First Name=Gaia, Last Name=Zuluaga, Email=gaia@example.com, Gender=Female, Mobile=1234567890, Date of Birth=20 May 1998, Subjects=English, Hobbies=Sports, Current Address=cra 123, State=Uttar Pradesh, City=Lucknow, Gracias=Thanks for submitting the form}" width="1366"/>
+                <img src="8106bef4dd56412cbb485d819385086b0e6ce710b750271616617ef738924cd4.png" title=" Dado que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'" width="1366"/>
+                <img src="8106bef4dd56412cbb485d819385086b0e6ce710b750271616617ef738924cd4.png" title=" Carlos opens the https://demoqa.com/" width="1366"/>
+                <img src="8106bef4dd56412cbb485d819385086b0e6ce710b750271616617ef738924cd4.png" title=" Dado que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/' (completed)" width="1366"/>
+                <img src="7e56b120258e3d031b70a317b5ee33660b1cddce8054cd898a0446f6a36ddcf5.png" title=" Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
+| First Name | Gaia |
+| Last Name | Zuluaga |
+| Email | gaia@example.com |
+| Gender | Female |
+| Mobile | 1234567890 |
+| Date of Birth | 20 May 1998 |
+| Subjects | English |
+| Hobbies | Sports |
+| Current Address | cra 123 |
+| State | Uttar Pradesh |
+| City | Lucknow |" width="1366"/>
+                <img src="7e56b120258e3d031b70a317b5ee33660b1cddce8054cd898a0446f6a36ddcf5.png" title=" Carlos diligenciar formulario estudiante" width="1366"/>
+                <img src="7e56b120258e3d031b70a317b5ee33660b1cddce8054cd898a0446f6a36ddcf5.png" title=" Carlos clicks on Boton Forms" width="1366"/>
+                <img src="a2196c95f7f09d0095feb8e0eb0a48cb6143ab692060a94fab83697ab9c7b050.png" title=" Carlos clicks on Boton practice forms" width="1366"/>
+                <img src="54c3d9b506989409138f4b57148aeaa9fd496861e0a7300851329e5ceef9b01f.png" title=" Carlos enters 'Gaia' into Caja de texto primer nombre" width="1366"/>
+                <img src="bc82617420b4be3dd79df2e857c643ce12f9d3765cd202cdde52f0c3a3ea3b57.png" title=" Carlos enters 'Zuluaga' into Caja de texto apellido" width="1366"/>
+                <img src="50af3c71b63c7dd225d90b9c39f27a9d8067698ca5c05d1bb58a8afa58f63ce9.png" title=" Carlos enters 'gaia@example.com' into Caja de texto correo" width="1366"/>
+                <img src="3c881f9cb634faec5b54f342b8d080752a460a17eb8fe5230bf50e533aa91b4d.png" title=" Carlos click radio button genero interaction" width="1366"/>
+                <img src="3c881f9cb634faec5b54f342b8d080752a460a17eb8fe5230bf50e533aa91b4d.png" title=" Carlos clicks on Radio Button Hembra" width="1366"/>
+                <img src="3c881f9cb634faec5b54f342b8d080752a460a17eb8fe5230bf50e533aa91b4d.png" title=" Carlos click radio button genero interaction (completed)" width="1366"/>
+                <img src="54bcae2520ea93de7857fb76c184bdae0eae400be36927f77d2db8c69a89b223.png" title=" Carlos enters '1234567890' into Caja de texto Celuar" width="1366"/>
+                <img src="ddad5d54c719eced2fcc7ebe8852ed56efc74cd37c929c6798da45587a2a123f.png" title=" Carlos fecha cumpleanos forms" width="1366"/>
+                <img src="ddad5d54c719eced2fcc7ebe8852ed56efc74cd37c929c6798da45587a2a123f.png" title=" Carlos clicks on Caja de texto Fecha de nacimiento" width="1366"/>
+                <img src="8757fcbb8664cebb6c49e0df241a79698223b0c8a360390b4189e3ec0a1fe61e.png" title=" Carlos enters 'a' into Caja de texto Fecha de nacimiento" width="1366"/>
+                <img src="3de4e95744e5acc5f5528feaedd969dc0a2fc84a4bfb89502dd370fd3582a7c3.png" title=" Carlos enters '20 May 1998' then hits [ENTER] into Caja de texto Fecha de nacimiento" width="1366"/>
+                <img src="3de4e95744e5acc5f5528feaedd969dc0a2fc84a4bfb89502dd370fd3582a7c3.png" title=" Carlos fecha cumpleanos forms (completed)" width="1366"/>
+                <img src="1608b5501aa258fa037eabc018ed8fa1bf6b10bbbd827aa3616e45324006dab0.png" title=" Carlos enters 'English' then hits [ENTER] into Caja de texto asignaturas" width="1366"/>
+                <img src="1fee9ff8ba8ea46247ead36a94193b3af8264f782f60bce889573142fd2e53f3.png" title=" Carlos click check box hobbies interaction" width="1366"/>
+                <img src="1fee9ff8ba8ea46247ead36a94193b3af8264f782f60bce889573142fd2e53f3.png" title=" Carlos clicks on Check box deportes" width="1366"/>
+                <img src="1fee9ff8ba8ea46247ead36a94193b3af8264f782f60bce889573142fd2e53f3.png" title=" Carlos click check box hobbies interaction (completed)" width="1366"/>
+                <img src="5b85d55199597f1bb19da654e936858525f8fc3e0bb09754f593bcdc27f0c01d.png" title=" Carlos enters 'cra 123' into Caja de texto direcci&oacute;n actual" width="1366"/>
+                <img src="731ad673ae2b9ae8e3da8e7f2c173b1000dc84e6e82a278f0f54582104bab6d9.png" title=" Carlos clicks on Lista pais" width="1366"/>
+                <img src="3800ab96b27230d2ef247f7f04f723277b76ce063322c107b8e28a1e45be5f13.png" title=" Carlos enters 'Uttar Pradesh' then hits [ENTER] into Lista pais 1" width="1366"/>
+                <img src="b4f22562aacfed6599b0df8fd331a08b7dd973a14ed4df45fbe94eea68c4037b.png" title=" Carlos clicks on Lista ciudad" width="1366"/>
+                <img src="66ab3af7938b3b5013bb160ada082f4431ad07bcbe49e12a9db7ef175e170f97.png" title=" Carlos enters 'Lucknow' then hits [ENTER] into Lista ciudad 1" width="1366"/>
+                <img src="cb69da203501ca24ae755f2ad7706f5b0deb2ad86d73908935fe57b01ef7a391.png" title=" Carlos clicks on Boton para enviar creaci&oacute;n registro" width="1366"/>
+                <img src="cb69da203501ca24ae755f2ad7706f5b0deb2ad86d73908935fe57b01ef7a391.png" title=" Carlos diligenciar formulario estudiante (completed)" width="1366"/>
+                <img src="b26269849eaf5387dbc3c38a7babd526a519279089256e3d8e8f6b409dc9ba18.png" title=" Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
+| First Name | Gaia |
+| Last Name | Zuluaga |
+| Email | gaia@example.com |
+| Gender | Female |
+| Mobile | 1234567890 |
+| Date of Birth | 20 May 1998 |
+| Subjects | English |
+| Hobbies | Sports |
+| Current Address | cra 123 |
+| State | Uttar Pradesh |
+| City | Lucknow | (completed)" width="1366"/>
+                <img src="b26269849eaf5387dbc3c38a7babd526a519279089256e3d8e8f6b409dc9ba18.png" title=" Entonces Puedo ver el mensaje de agradecimiento y mis datos en pantalla
+| First Name | Gaia |
+| Email | gaia@example.com |
+| Mobile | 1234567890 |
+| Date of Birth | 20 May 1998 |
+| Subjects | English |
+| Current Address | cra 123 |
+| State | Uttar Pradesh |
+| City | Lucknow |
+| Gracias | Thanks for submitting the form |" width="1366"/>
+                <img src="b26269849eaf5387dbc3c38a7babd526a519279089256e3d8e8f6b409dc9ba18.png" title=" Then verificar forms completo should be (true)" width="1366"/>
+                <img src="b26269849eaf5387dbc3c38a7babd526a519279089256e3d8e8f6b409dc9ba18.png" title=" Entonces Puedo ver el mensaje de agradecimiento y mis datos en pantalla
+| First Name | Gaia |
+| Email | gaia@example.com |
+| Mobile | 1234567890 |
+| Date of Birth | 20 May 1998 |
+| Subjects | English |
+| Current Address | cra 123 |
+| State | Uttar Pradesh |
+| City | Lucknow |
+| Gracias | Thanks for submitting the form | (completed)" width="1366"/>
+                <img src="b26269849eaf5387dbc3c38a7babd526a519279089256e3d8e8f6b409dc9ba18.png" title=" Example 1: {First Name=Gaia, Last Name=Zuluaga, Email=gaia@example.com, Gender=Female, Mobile=1234567890, Date of Birth=20 May 1998, Subjects=English, Hobbies=Sports, Current Address=cra 123, State=Uttar Pradesh, City=Lucknow, Gracias=Thanks for submitting the form} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.4.24</span>
+</div>
+</body>
+</html>

@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Productos en el carrito" skipped="0" tests="1" time="49.11" timestamp="2023-08-19 05:25:53"><testcase name="Poner 3 productos en mi carrito de manera exitosa"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Productos en el carrito" skipped="0" tests="1" time="1.69" timestamp="2023-09-02 11:51:25"><testcase name="Poner 3 productos en mi carrito de manera exitosa"><failure message="Invalid URL: " type="java.lang.AssertionError">Invalid URL: </failure><system-err>Invalid URL: &#13;
+com.BuyAmazon.steps.RegisterStep.openBrowser(RegisterStep.java:13)&#13;
+com.BuyAmazon.stepdefinitions.BuyAmazonStepDefinition.estoyEnLaPaginaPrincipalDeAmazon(BuyAmazonStepDefinition.java:15)&#13;
+✽.Estoy en la pagina principal de Amazon(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/Selenium/BuyAmazon/src/test/resources/features/buyAmazon.feature:8)&#13;
+</system-err></testcase></testsuite>

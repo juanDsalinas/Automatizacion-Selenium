@@ -18,8 +18,8 @@ QUESTIONS FOR LATER
 
 Pregunta 6: En Screenplay, ¿qué se coloca en el método performAs() de una clase que implementa la interfaz Task?
 
-a. La lógica para interactuar con los elementos de la interfaz de usuario.
-- b. La descripción de la tarea que se está realizando.
+- a. La lógica para interactuar con los elementos de la interfaz de usuario.
+b. La descripción de la tarea que se está realizando.
 c. La configuración de las habilidades del actor.
 d. El mapeo de los elementos de la página.
 
@@ -27,9 +27,9 @@ d. El mapeo de los elementos de la página.
 Pregunta 7: ¿Qué función cumple la anotación @Subject en Screenplay?
 
 a. Indicar el actor que está realizando una tarea.
-b. Establecer el texto que se mostrará en la evidencia.
+- b. Establecer el texto que se mostrará en la evidencia.
 c. Identificar los elementos de la página que serán interactuados.
-- d. Definir la descripción de una pregunta (Question) en la evidencia.
+d. Definir la descripción de una pregunta (Question) en la evidencia.
 
 
 Pregunta 9: ¿Cuál es el propósito principal de utilizar la anotación @Step en el patrón de diseño Screenplay?
@@ -45,20 +45,20 @@ Pregunta 5: ¿Cuál de las siguientes afirmaciones es cierta acerca de las clase
 a. Las clases Page Objects son exclusivas de Cucumber y no se usan en el patrón Screenplay.
 b. Las clases Page Objects son utilizadas para definir las interacciones en el patrón Screenplay.
 c. Las clases Page Objects son utilizadas para definir las preguntas en el patrón Screenplay.
-d. Las clases Page Objects son utilizadas para modelar las páginas o componentes de la interfaz de usuario en el patrón Screenplay.
+- d. Las clases Page Objects son utilizadas para modelar las páginas o componentes de la interfaz de usuario en el patrón Screenplay.
 
 
 Pregunta 5: En el patrón de diseño Screenplay, ¿qué objeto se encarga de definir una interacción que el actor puede llevar a cabo en la automatización?
 
 a. Step Definition
 b. Page Object
-c. Interaction
+- c. Interaction
 d. Task
 
 
 Pregunta 2: En el patrón de diseño Screenplay, ¿cuál es el propósito principal de las clases Step (pasos)?
 a. Definir la estructura de las pruebas de aceptación.
-b. Realizar la interacción con los elementos de la interfaz de usuario.
+- b. Realizar la interacción con los elementos de la interfaz de usuario.
 c. Representar los objetos de dominio en el sistema.
 d. Establecer las configuraciones de las anotaciones de Serenity.
 
@@ -67,7 +67,7 @@ Pregunta 4: En el patrón Screenplay, ¿cuál de las siguientes afirmaciones es 
 a. Las clases Question no pueden recibir parámetros ni realizar cálculos.
 b. Las clases Question son utilizadas únicamente para definir interacciones con la base de datos.
 c. Las clases Question son siempre clases abstractas.
-d. Las clases Question se utilizan para consultar y verificar información del sistema bajo prueba.
+- d. Las clases Question se utilizan para consultar y verificar información del sistema bajo prueba.
 
 
 Pregunta 5: En el patrón Screenplay, ¿cuál es el propósito principal de las clases llamadas "Task"?

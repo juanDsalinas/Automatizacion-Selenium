@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Implementación Automatizaciones sobre la página DemoQa</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Implementación Automatizaciones sobre la página DemoQa</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Implementación Automatizaciones sobre la página DemoQa</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">48.185s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Escenario: Interactuar con el formulario</td>
+<td class="success">48.185s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[92m|-- Example 1: {First Name=Gaia, Last Name=Zuluaga, Email=gaia@example.com, Gender=Female, Mobile=1234567890, Date of Birth=20 May 1998, Subjects=English, Hobbies=Sports, Current Address=cra 123, State=Uttar Pradesh, City=Lucknow, Gracias=Thanks for submitting the form}?[0m
+?[92m|---- Dado que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'?[0m
+?[92m|------ Carlos opens the https://demoqa.com/?[0m
+Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
+?[92m|---- Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
+| First Name | Gaia |
+| Last Name | Zuluaga |
+| Email | gaia@example.com |
+| Gender | Female |
+| Mobile | 1234567890 |
+| Date of Birth | 20 May 1998 |
+| Subjects | English |
+| Hobbies | Sports |
+| Current Address | cra 123 |
+| State | Uttar Pradesh |
+| City | Lucknow |?[0m
+?[92m|------ Carlos diligenciar formulario estudiante?[0m
+?[92m|-------- Carlos clicks on Boton Forms?[0m
+?[92m|-------- Carlos clicks on Boton practice forms?[0m
+?[92m|-------- Carlos enters 'Gaia' into Caja de texto primer nombre?[0m
+?[92m|-------- Carlos enters 'Zuluaga' into Caja de texto apellido?[0m
+?[92m|-------- Carlos enters 'gaia@example.com' into Caja de texto correo?[0m
+?[92m|-------- Carlos click radio button genero interaction?[0m
+?[92m|---------- Carlos clicks on Radio Button Hembra?[0m
+?[92m|-------- Carlos enters '1234567890' into Caja de texto Celuar?[0m
+?[92m|-------- Carlos fecha cumpleanos forms?[0m
+?[92m|---------- Carlos clicks on Caja de texto Fecha de nacimiento?[0m
+?[92m|---------- Carlos enters '?a' into Caja de texto Fecha de nacimiento?[0m
+?[92m|---------- Carlos enters '20 May 1998' then hits [ENTER] into Caja de texto Fecha de nacimiento?[0m
+?[92m|-------- Carlos enters 'English' then hits [ENTER] into Caja de texto asignaturas?[0m
+?[92m|-------- Carlos click check box hobbies interaction?[0m
+?[92m|---------- Carlos clicks on Check box deportes?[0m
+?[92m|-------- Carlos enters 'cra 123' into Caja de texto dirección actual?[0m
+?[92m|-------- Carlos clicks on Lista pais?[0m
+?[92m|-------- Carlos enters 'Uttar Pradesh' then hits [ENTER] into Lista pais 1?[0m
+?[92m|-------- Carlos clicks on Lista ciudad?[0m
+?[92m|-------- Carlos enters 'Lucknow' then hits [ENTER] into Lista ciudad 1?[0m
+?[92m|-------- Carlos clicks on Boton para enviar creación registro?[0m
+Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
+?[92m|---- Entonces Puedo ver el mensaje de agradecimiento y mis datos en pantalla
+| First Name | Gaia |
+| Email | gaia@example.com |
+| Mobile | 1234567890 |
+| Date of Birth | 20 May 1998 |
+| Subjects | English |
+| Current Address | cra 123 |
+| State | Uttar Pradesh |
+| City | Lucknow |
+| Gracias | Thanks for submitting the form |?[0m
+?[92m|------ Then verificar forms completo should be (true)?[0m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/QV-2655/Documents/Qvsion/izyAcademy/Cursos%20a%20realizar/Selenium%20con%20screenplay/scree/src/test/resources/features/automatizacion_pagina_demo_qa.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/QV-2655/Documents/Qvsion/izyAcademy/Cursos%20a%20realizar/Selenium%20con%20screenplay/scree/src/test/resources/features/automatizacion_pagina_demo_qa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Escenario: Interactuar con el formulario(implementación-automatizaciones-sobre-la-página-demoqa;escenario:-interactuar-con-el-formulario)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+[Test worker] INFO io.github.bonigarcia.wdm.online.Downloader - Downloading https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_win32.zip
+[Test worker] INFO io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver_win32.zip
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\QV-2655\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: &quot;--disable-notifications, -..., goog:chromeOptions: {args: [--&quot;, --disable-notifications, --enable-automation, --profile-directory=Default, --disable-web-security, --disable-plugins-discovery, --disk-cache-dir=null, --disable-popup-blocking, --disable-download-notifica..., --start-maximized, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --incognito&quot;], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 5377
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+nov 22, 2021 2:44:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Escenario
+----------------------------------------------------------------------?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 22/11/2021 02:44:58 PM</p>
+</div>
+</div>
+</body>
+</html>

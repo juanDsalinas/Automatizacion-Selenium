@@ -1,7 +1,7 @@
 en la anotacion @RunWith definimos el runner para poder
 ejecutar el test 
 
-en la etiqueta @Step definimos com ose visualiza la 
+en la etiqueta @Step definimos como se visualiza la 
 descripcion de la interaccion o tarea que esta 
 realizando el actor 
 

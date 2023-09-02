@@ -1,0 +1,12 @@
+questions/VerificarFormsCompleto.java
+ questions.VerificarFormsCompleto
+interactions/ClickCheckBoxHobbiesInteraction.java
+ interactions.ClickCheckBoxHobbiesInteraction
+tasks/demoqa/DiligenciarFormularioEstudiante.java
+ tasks.demoqa.DiligenciarFormularioEstudiante
+userinterface/DemoQaElementosCategoriaForms.java
+ userinterface.DemoQaElementosCategoriaForms
+interactions/ClickRadioButtonGeneroInteraction.java
+ interactions.ClickRadioButtonGeneroInteraction
+interactions/FechaCumpleanosForms.java
+ interactions.FechaCumpleanosForms
