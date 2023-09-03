@@ -1,12 +1,644 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Implementación Automatizaciones sobre la página DemoQa" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-22T19:44:06" hostname="QV-2655" time="48.185">
+<testsuite name="Implementación Automatizaciones sobre la página DemoQa" tests="3" skipped="0" failures="3" errors="0" timestamp="2023-09-03T21:14:02" hostname="DESKTOP-0AB3449" time="19.383">
   <properties/>
-  <testcase name="Escenario: Interactuar con el formulario" classname="Implementación Automatizaciones sobre la página DemoQa" time="48.185"/>
+  <testcase name="Escenario: Interactuar con el formulario #1" classname="Implementación Automatizaciones sobre la página DemoQa" time="11.198">
+    <failure message="net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
+	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
+	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
+	at stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)
+	at ✽.que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature:9)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+). See below for more details.
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:159)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
+	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
+	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
+	at stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:262)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.lambda$newInstance$0(ChromeDriverProvider.java:66)
+	at net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver.withConfiguration(ProvideNewDriver.java:40)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:62)
+	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:170)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:151)
+	... 89 more
+</failure>
+  </testcase>
+  <testcase name="Escenario: Interactuar con el formulario #2" classname="Implementación Automatizaciones sobre la página DemoQa" time="3.971">
+    <failure message="net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
+	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
+	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
+	at stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)
+	at ✽.que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature:9)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+). See below for more details.
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:159)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
+	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
+	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
+	at stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:262)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.lambda$newInstance$0(ChromeDriverProvider.java:66)
+	at net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver.withConfiguration(ProvideNewDriver.java:40)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:62)
+	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:170)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:151)
+	... 89 more
+</failure>
+  </testcase>
+  <testcase name="Escenario: Interactuar con el formulario #3" classname="Implementación Automatizaciones sobre la página DemoQa" time="4.193">
+    <failure message="net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
+	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
+	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
+	at stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)
+	at ✽.que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature:9)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+). See below for more details.
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:159)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
+	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
+	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
+	at stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:262)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.lambda$newInstance$0(ChromeDriverProvider.java:66)
+	at net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver.withConfiguration(ProvideNewDriver.java:40)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:62)
+	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:170)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:151)
+	... 89 more
+</failure>
+  </testcase>
   <system-out><![CDATA[?[92m|-- Example 1: {First Name=Gaia, Last Name=Zuluaga, Email=gaia@example.com, Gender=Female, Mobile=1234567890, Date of Birth=20 May 1998, Subjects=English, Hobbies=Sports, Current Address=cra 123, State=Uttar Pradesh, City=Lucknow, Gracias=Thanks for submitting the form}?[0m
-?[92m|---- Dado que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'?[0m
-?[92m|------ Carlos opens the https://demoqa.com/?[0m
+?[92m|---- Dado que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'?[0m
+?[92m|------ Carlos opens the https://www.youtube.com/?[0m
 Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-?[92m|---- Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
+?[92m|-------- Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
 | First Name | Gaia |
 | Last Name | Zuluaga |
 | Email | gaia@example.com |
@@ -18,30 +650,8 @@ Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableAr
 | Current Address | cra 123 |
 | State | Uttar Pradesh |
 | City | Lucknow |?[0m
-?[92m|------ Carlos diligenciar formulario estudiante?[0m
-?[92m|-------- Carlos clicks on Boton Forms?[0m
-?[92m|-------- Carlos clicks on Boton practice forms?[0m
-?[92m|-------- Carlos enters 'Gaia' into Caja de texto primer nombre?[0m
-?[92m|-------- Carlos enters 'Zuluaga' into Caja de texto apellido?[0m
-?[92m|-------- Carlos enters 'gaia@example.com' into Caja de texto correo?[0m
-?[92m|-------- Carlos click radio button genero interaction?[0m
-?[92m|---------- Carlos clicks on Radio Button Hembra?[0m
-?[92m|-------- Carlos enters '1234567890' into Caja de texto Celuar?[0m
-?[92m|-------- Carlos fecha cumpleanos forms?[0m
-?[92m|---------- Carlos clicks on Caja de texto Fecha de nacimiento?[0m
-?[92m|---------- Carlos enters '?a' into Caja de texto Fecha de nacimiento?[0m
-?[92m|---------- Carlos enters '20 May 1998' then hits [ENTER] into Caja de texto Fecha de nacimiento?[0m
-?[92m|-------- Carlos enters 'English' then hits [ENTER] into Caja de texto asignaturas?[0m
-?[92m|-------- Carlos click check box hobbies interaction?[0m
-?[92m|---------- Carlos clicks on Check box deportes?[0m
-?[92m|-------- Carlos enters 'cra 123' into Caja de texto dirección actual?[0m
-?[92m|-------- Carlos clicks on Lista pais?[0m
-?[92m|-------- Carlos enters 'Uttar Pradesh' then hits [ENTER] into Lista pais 1?[0m
-?[92m|-------- Carlos clicks on Lista ciudad?[0m
-?[92m|-------- Carlos enters 'Lucknow' then hits [ENTER] into Lista ciudad 1?[0m
-?[92m|-------- Carlos clicks on Boton para enviar creación registro?[0m
 Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-?[92m|---- Entonces Puedo ver el mensaje de agradecimiento y mis datos en pantalla
+?[92m|-------- Entonces Puedo ver el mensaje de agradecimiento y mis datos en pantalla
 | First Name | Gaia |
 | Email | gaia@example.com |
 | Mobile | 1234567890 |
@@ -51,10 +661,63 @@ Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableAr
 | State | Uttar Pradesh |
 | City | Lucknow |
 | Gracias | Thanks for submitting the form |?[0m
-?[92m|------ Then verificar forms completo should be (true)?[0m
+?[92m|-------- Example 2: {First Name=Berlin, Last Name=Cruz, Email=berlin@example.com, Gender=Male, Mobile=6543219878, Date of Birth=15 Jul 2000, Subjects=Chemistry, Hobbies=Reading, Current Address=cra 234, State=Haryana, City=Panipat, Gracias=Thanks for submitting the form}?[0m
+?[92m|---------- Dado que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'?[0m
+?[92m|------------ Carlos opens the https://www.youtube.com/?[0m
+Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
+?[92m|-------------- Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
+| First Name | Berlin |
+| Last Name | Cruz |
+| Email | berlin@example.com |
+| Gender | Male |
+| Mobile | 6543219878 |
+| Date of Birth | 15 Jul 2000 |
+| Subjects | Chemistry |
+| Hobbies | Reading |
+| Current Address | cra 234 |
+| State | Haryana |
+| City | Panipat |?[0m
+Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
+?[92m|-------------- Entonces Puedo ver el mensaje de agradecimiento y mis datos en pantalla
+| First Name | Berlin |
+| Email | berlin@example.com |
+| Mobile | 6543219878 |
+| Date of Birth | 15 Jul 2000 |
+| Subjects | Chemistry |
+| Current Address | cra 234 |
+| State | Haryana |
+| City | Panipat |
+| Gracias | Thanks for submitting the form |?[0m
+?[92m|-------------- Example 3: {First Name=Osiris, Last Name=Restrepo, Email=osiris@example.com, Gender=Other, Mobile=7896543210, Date of Birth=17 Jun 1963, Subjects=Biology, Hobbies=Music, Current Address=cra 345, State=Rajasthan, City=Jaipur, Gracias=Thanks for submitting the form}?[0m
+?[92m|---------------- Dado que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'?[0m
+?[92m|------------------ Carlos opens the https://www.youtube.com/?[0m
+Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
+?[92m|-------------------- Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
+| First Name | Osiris |
+| Last Name | Restrepo |
+| Email | osiris@example.com |
+| Gender | Other |
+| Mobile | 7896543210 |
+| Date of Birth | 17 Jun 1963 |
+| Subjects | Biology |
+| Hobbies | Music |
+| Current Address | cra 345 |
+| State | Rajasthan |
+| City | Jaipur |?[0m
+Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
+?[92m|-------------------- Entonces Puedo ver el mensaje de agradecimiento y mis datos en pantalla
+| First Name | Osiris |
+| Email | osiris@example.com |
+| Mobile | 7896543210 |
+| Date of Birth | 17 Jun 1963 |
+| Subjects | Biology |
+| Current Address | cra 345 |
+| State | Rajasthan |
+| City | Jaipur |
+| Gracias | Thanks for submitting the form |?[0m
 ]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/QV-2655/Documents/Qvsion/izyAcademy/Cursos%20a%20realizar/Selenium%20con%20screenplay/scree/src/test/resources/features/automatizacion_pagina_demo_qa.feature
-[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/QV-2655/Documents/Qvsion/izyAcademy/Cursos%20a%20realizar/Selenium%20con%20screenplay/scree/src/test/resources/features/automatizacion_pagina_demo_qa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
@@ -64,26 +727,157 @@ Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableAr
 Escenario: Interactuar con el formulario(implementación-automatizaciones-sobre-la-página-demoqa;escenario:-interactuar-con-el-formulario)
 --------------------------------------------------------------------------------
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
-[Test worker] INFO io.github.bonigarcia.wdm.online.Downloader - Downloading https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_win32.zip
-[Test worker] INFO io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver_win32.zip
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\QV-2655\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116
+[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: "--disable-notifications, -..., goog:chromeOptions: {args: [--", --disable-notifications, --enable-automation, --profile-directory=Default, --disable-web-security, --disable-plugins-discovery, --disk-cache-dir=null, --disable-popup-blocking, --disable-download-notifica..., --start-maximized, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --incognito"], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 5377
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 4557
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-nov 22, 2021 2:44:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: W3C
-[Test worker] INFO  - ?[92m
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+[Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver?[0m
+[Test worker] INFO  - ?[33m      -> STEP IGNORED?[0m
+[Test worker] INFO  - ?[33m      -> STEP IGNORED?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+). See below for more details.?[0m
+[Test worker] ERROR  - ?[91m
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
 
 Escenario
-----------------------------------------------------------------------?[0m
+---------------------------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: Carlos opens the https://www.youtube.com/?[0m
+[Test worker] ERROR  - ?[91m    Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116
+[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: "--disable-notifications, -..., goog:chromeOptions: {args: [--", --disable-notifications, --enable-automation, --profile-directory=Default, --disable-web-security, --disable-plugins-discovery, --disk-cache-dir=null, --disable-popup-blocking, --disable-download-notifica..., --start-maximized, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --incognito"], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 14654
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver?[0m
+[Test worker] INFO  - ?[33m      -> STEP IGNORED?[0m
+[Test worker] INFO  - ?[33m      -> STEP IGNORED?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+). See below for more details.?[0m
+[Test worker] ERROR  - ?[91m
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Escenario
+---------------------------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: Carlos opens the https://www.youtube.com/?[0m
+[Test worker] ERROR  - ?[91m    Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116
+[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: "--disable-notifications, -..., goog:chromeOptions: {args: [--", --disable-notifications, --enable-automation, --profile-directory=Default, --disable-web-security, --disable-plugins-discovery, --disk-cache-dir=null, --disable-popup-blocking, --disable-download-notifica..., --start-maximized, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --incognito"], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 45577
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver?[0m
+[Test worker] INFO  - ?[33m      -> STEP IGNORED?[0m
+[Test worker] INFO  - ?[33m      -> STEP IGNORED?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+). See below for more details.?[0m
 ]]></system-err>
 </testsuite>

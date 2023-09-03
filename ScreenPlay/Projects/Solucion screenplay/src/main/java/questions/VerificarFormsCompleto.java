@@ -8,11 +8,8 @@ import net.serenitybdd.screenplay.Question;
 import java.util.Map;
 
 import static userinterface.DemoQaElementosCategoriaForms.*;
-
 @AllArgsConstructor
 public class VerificarFormsCompleto implements Question<Boolean> {
-
-
     private final Map<String, String> mapCaracteristicasEstudiante;
 
     public static VerificarFormsCompleto enLaPaginaQaDemo(Map<String, String> mapCaracteristicasEstudiante) {

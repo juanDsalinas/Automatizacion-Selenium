@@ -1,1 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Implementación Automatizaciones sobre la página DemoQa" skipped="0" tests="1" time="47.68" timestamp="2021-11-22 02:44:06"><testcase name="Escenario"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="3" failures="0" name="Implementación Automatizaciones sobre la página DemoQa" skipped="0" tests="3" time="18.37" timestamp="2023-09-03 04:14:03"><testcase name="Escenario"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96&#10;Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: driver.version: ProvideNewDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x011F6903+2517251]&#10;&#9;Ordinal0 [0x0118F8E1+2095329]&#10;&#9;Ordinal0 [0x01092848+1058888]&#10;&#9;Ordinal0 [0x010B0B9D+1182621]&#10;&#9;Ordinal0 [0x010ACA60+1165920]&#10;&#9;Ordinal0 [0x010AA2CF+1155791]&#10;&#9;Ordinal0 [0x010DAAAF+1354415]&#10;&#9;Ordinal0 [0x010DA71A+1353498]&#10;&#9;Ordinal0 [0x010D639B+1336219]&#10;&#9;Ordinal0 [0x010B27A7+1189799]&#10;&#9;Ordinal0 [0x010B3609+1193481]&#10;&#9;GetHandleVerifier [0x01385904+1577972]&#10;&#9;GetHandleVerifier [0x01430B97+2279047]&#10;&#9;GetHandleVerifier [0x01286D09+534521]&#10;&#9;GetHandleVerifier [0x01285DB9+530601]&#10;&#9;Ordinal0 [0x01194FF9+2117625]&#10;&#9;Ordinal0 [0x011998A8+2136232]&#10;&#9;Ordinal0 [0x011999E2+2136546]&#10;&#9;Ordinal0 [0x011A3541+2176321]&#10;&#9;BaseThreadInitThunk [0x76F000C9+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77737B4E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77737B1E+238]&#10;). See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+). See below for more details.</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011F6903+2517251]
+	Ordinal0 [0x0118F8E1+2095329]
+	Ordinal0 [0x01092848+1058888]
+	Ordinal0 [0x010B0B9D+1182621]
+	Ordinal0 [0x010ACA60+1165920]
+	Ordinal0 [0x010AA2CF+1155791]
+	Ordinal0 [0x010DAAAF+1354415]
+	Ordinal0 [0x010DA71A+1353498]
+	Ordinal0 [0x010D639B+1336219]
+	Ordinal0 [0x010B27A7+1189799]
+	Ordinal0 [0x010B3609+1193481]
+	GetHandleVerifier [0x01385904+1577972]
+	GetHandleVerifier [0x01430B97+2279047]
+	GetHandleVerifier [0x01286D09+534521]
+	GetHandleVerifier [0x01285DB9+530601]
+	Ordinal0 [0x01194FF9+2117625]
+	Ordinal0 [0x011998A8+2136232]
+	Ordinal0 [0x011999E2+2136546]
+	Ordinal0 [0x011A3541+2176321]
+	BaseThreadInitThunk [0x76F000C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+). See below for more details.&#13;
+stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:64)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:104)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:73)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)&#13;
+</system-err></testcase></testsuite>

@@ -6,6 +6,7 @@ import io.cucumber.java.es.Dado;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+// import net.thucydides.core.annotations.Managed;
 import org.hamcrest.Matchers;
 import questions.VerificarFormsCompleto;
 import tasks.demoqa.DiligenciarFormularioEstudiante;
@@ -13,9 +14,8 @@ import tasks.demoqa.DiligenciarFormularioEstudiante;
 import java.util.Map;
 
 import static net.serenitybdd.screenplay.actors.OnStage.*;
-
 public class AutomatizacionPaginaDemoQaStepDefinition {
-
+    // @Managed(driver = "chrome")
 
     @Dado("que {string} se encuentra en la pagina web {string}")
     public void abrirPaginaWeb(String nombreActor, String url) {

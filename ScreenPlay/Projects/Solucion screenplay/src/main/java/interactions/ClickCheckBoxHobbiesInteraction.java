@@ -16,11 +16,9 @@ public class ClickCheckBoxHobbiesInteraction implements Interaction {
 
     private final Map<String, String> mapCaracteristicasEstudiante;
 
-
     public static ClickCheckBoxHobbiesInteraction enLaPaginaQaDemo(Map<String, String> mapCaracteristicasEstudiante) {
         return Tasks.instrumented(ClickCheckBoxHobbiesInteraction.class, mapCaracteristicasEstudiante);
     }
-
 
     @Override
     public <T extends Actor> void performAs(T actor) {
