@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Implementación Automatizaciones sobre la página DemoQa" tests="3" skipped="0" failures="3" errors="0" timestamp="2023-09-03T21:14:02" hostname="DESKTOP-0AB3449" time="19.383">
+<testsuite name="Implementación Automatizaciones sobre la página DemoQa" tests="3" skipped="0" failures="3" errors="0" timestamp="2023-09-05T18:17:03" hostname="DESKTOP-0AB3449" time="23.436">
   <properties/>
-  <testcase name="Escenario: Interactuar con el formulario #1" classname="Implementación Automatizaciones sobre la página DemoQa" time="11.198">
+  <testcase name="Escenario: Interactuar con el formulario #1" classname="Implementación Automatizaciones sobre la página DemoQa" time="13.608">
     <failure message="net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
 	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
 	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
@@ -10,7 +10,7 @@
 	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
 	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
 	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs$accessor$8ZBOgYJd(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -22,41 +22,41 @@
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
 	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
 	at stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)
-	at ✽.que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature:9)
+	at ✽.que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature:9)
 Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
 Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: ProvideNewDriver
 remote stacktrace: Backtrace:
-	Ordinal0 [0x011F6903+2517251]
-	Ordinal0 [0x0118F8E1+2095329]
-	Ordinal0 [0x01092848+1058888]
-	Ordinal0 [0x010B0B9D+1182621]
-	Ordinal0 [0x010ACA60+1165920]
-	Ordinal0 [0x010AA2CF+1155791]
-	Ordinal0 [0x010DAAAF+1354415]
-	Ordinal0 [0x010DA71A+1353498]
-	Ordinal0 [0x010D639B+1336219]
-	Ordinal0 [0x010B27A7+1189799]
-	Ordinal0 [0x010B3609+1193481]
-	GetHandleVerifier [0x01385904+1577972]
-	GetHandleVerifier [0x01430B97+2279047]
-	GetHandleVerifier [0x01286D09+534521]
-	GetHandleVerifier [0x01285DB9+530601]
-	Ordinal0 [0x01194FF9+2117625]
-	Ordinal0 [0x011998A8+2136232]
-	Ordinal0 [0x011999E2+2136546]
-	Ordinal0 [0x011A3541+2176321]
-	BaseThreadInitThunk [0x76F000C9+25]
-	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+	Ordinal0 [0x00976903+2517251]
+	Ordinal0 [0x0090F8E1+2095329]
+	Ordinal0 [0x00812848+1058888]
+	Ordinal0 [0x00830B9D+1182621]
+	Ordinal0 [0x0082CA60+1165920]
+	Ordinal0 [0x0082A2CF+1155791]
+	Ordinal0 [0x0085AAAF+1354415]
+	Ordinal0 [0x0085A71A+1353498]
+	Ordinal0 [0x0085639B+1336219]
+	Ordinal0 [0x008327A7+1189799]
+	Ordinal0 [0x00833609+1193481]
+	GetHandleVerifier [0x00B05904+1577972]
+	GetHandleVerifier [0x00BB0B97+2279047]
+	GetHandleVerifier [0x00A06D09+534521]
+	GetHandleVerifier [0x00A05DB9+530601]
+	Ordinal0 [0x00914FF9+2117625]
+	Ordinal0 [0x009198A8+2136232]
+	Ordinal0 [0x009199E2+2136546]
+	Ordinal0 [0x00923541+2176321]
+	BaseThreadInitThunk [0x759F00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77977B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977B1E+238]
 ). See below for more details.
 	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:159)
 	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
@@ -66,7 +66,7 @@ remote stacktrace: Backtrace:
 	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
 	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
 	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs$accessor$8ZBOgYJd(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,7 +78,7 @@ remote stacktrace: Backtrace:
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
@@ -151,31 +151,31 @@ remote stacktrace: Backtrace:
 Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 96
 Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: ProvideNewDriver
 remote stacktrace: Backtrace:
-	Ordinal0 [0x011F6903+2517251]
-	Ordinal0 [0x0118F8E1+2095329]
-	Ordinal0 [0x01092848+1058888]
-	Ordinal0 [0x010B0B9D+1182621]
-	Ordinal0 [0x010ACA60+1165920]
-	Ordinal0 [0x010AA2CF+1155791]
-	Ordinal0 [0x010DAAAF+1354415]
-	Ordinal0 [0x010DA71A+1353498]
-	Ordinal0 [0x010D639B+1336219]
-	Ordinal0 [0x010B27A7+1189799]
-	Ordinal0 [0x010B3609+1193481]
-	GetHandleVerifier [0x01385904+1577972]
-	GetHandleVerifier [0x01430B97+2279047]
-	GetHandleVerifier [0x01286D09+534521]
-	GetHandleVerifier [0x01285DB9+530601]
-	Ordinal0 [0x01194FF9+2117625]
-	Ordinal0 [0x011998A8+2136232]
-	Ordinal0 [0x011999E2+2136546]
-	Ordinal0 [0x011A3541+2176321]
-	BaseThreadInitThunk [0x76F000C9+25]
-	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+	Ordinal0 [0x00976903+2517251]
+	Ordinal0 [0x0090F8E1+2095329]
+	Ordinal0 [0x00812848+1058888]
+	Ordinal0 [0x00830B9D+1182621]
+	Ordinal0 [0x0082CA60+1165920]
+	Ordinal0 [0x0082A2CF+1155791]
+	Ordinal0 [0x0085AAAF+1354415]
+	Ordinal0 [0x0085A71A+1353498]
+	Ordinal0 [0x0085639B+1336219]
+	Ordinal0 [0x008327A7+1189799]
+	Ordinal0 [0x00833609+1193481]
+	GetHandleVerifier [0x00B05904+1577972]
+	GetHandleVerifier [0x00BB0B97+2279047]
+	GetHandleVerifier [0x00A06D09+534521]
+	GetHandleVerifier [0x00A05DB9+530601]
+	Ordinal0 [0x00914FF9+2117625]
+	Ordinal0 [0x009198A8+2136232]
+	Ordinal0 [0x009199E2+2136546]
+	Ordinal0 [0x00923541+2176321]
+	BaseThreadInitThunk [0x759F00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77977B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977B1E+238]
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -212,7 +212,7 @@ remote stacktrace: Backtrace:
 	... 89 more
 </failure>
   </testcase>
-  <testcase name="Escenario: Interactuar con el formulario #2" classname="Implementación Automatizaciones sobre la página DemoQa" time="3.971">
+  <testcase name="Escenario: Interactuar con el formulario #2" classname="Implementación Automatizaciones sobre la página DemoQa" time="5.382">
     <failure message="net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
 	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
 	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
@@ -221,7 +221,7 @@ remote stacktrace: Backtrace:
 	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
 	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
 	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs$accessor$8ZBOgYJd(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -233,41 +233,41 @@ remote stacktrace: Backtrace:
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
 	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
 	at stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)
-	at ✽.que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature:9)
+	at ✽.que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature:9)
 Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
 Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: ProvideNewDriver
 remote stacktrace: Backtrace:
-	Ordinal0 [0x011F6903+2517251]
-	Ordinal0 [0x0118F8E1+2095329]
-	Ordinal0 [0x01092848+1058888]
-	Ordinal0 [0x010B0B9D+1182621]
-	Ordinal0 [0x010ACA60+1165920]
-	Ordinal0 [0x010AA2CF+1155791]
-	Ordinal0 [0x010DAAAF+1354415]
-	Ordinal0 [0x010DA71A+1353498]
-	Ordinal0 [0x010D639B+1336219]
-	Ordinal0 [0x010B27A7+1189799]
-	Ordinal0 [0x010B3609+1193481]
-	GetHandleVerifier [0x01385904+1577972]
-	GetHandleVerifier [0x01430B97+2279047]
-	GetHandleVerifier [0x01286D09+534521]
-	GetHandleVerifier [0x01285DB9+530601]
-	Ordinal0 [0x01194FF9+2117625]
-	Ordinal0 [0x011998A8+2136232]
-	Ordinal0 [0x011999E2+2136546]
-	Ordinal0 [0x011A3541+2176321]
-	BaseThreadInitThunk [0x76F000C9+25]
-	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+	Ordinal0 [0x00976903+2517251]
+	Ordinal0 [0x0090F8E1+2095329]
+	Ordinal0 [0x00812848+1058888]
+	Ordinal0 [0x00830B9D+1182621]
+	Ordinal0 [0x0082CA60+1165920]
+	Ordinal0 [0x0082A2CF+1155791]
+	Ordinal0 [0x0085AAAF+1354415]
+	Ordinal0 [0x0085A71A+1353498]
+	Ordinal0 [0x0085639B+1336219]
+	Ordinal0 [0x008327A7+1189799]
+	Ordinal0 [0x00833609+1193481]
+	GetHandleVerifier [0x00B05904+1577972]
+	GetHandleVerifier [0x00BB0B97+2279047]
+	GetHandleVerifier [0x00A06D09+534521]
+	GetHandleVerifier [0x00A05DB9+530601]
+	Ordinal0 [0x00914FF9+2117625]
+	Ordinal0 [0x009198A8+2136232]
+	Ordinal0 [0x009199E2+2136546]
+	Ordinal0 [0x00923541+2176321]
+	BaseThreadInitThunk [0x759F00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77977B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977B1E+238]
 ). See below for more details.
 	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:159)
 	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
@@ -277,7 +277,7 @@ remote stacktrace: Backtrace:
 	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
 	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
 	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs$accessor$8ZBOgYJd(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -289,7 +289,7 @@ remote stacktrace: Backtrace:
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
@@ -362,31 +362,31 @@ remote stacktrace: Backtrace:
 Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 96
 Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: ProvideNewDriver
 remote stacktrace: Backtrace:
-	Ordinal0 [0x011F6903+2517251]
-	Ordinal0 [0x0118F8E1+2095329]
-	Ordinal0 [0x01092848+1058888]
-	Ordinal0 [0x010B0B9D+1182621]
-	Ordinal0 [0x010ACA60+1165920]
-	Ordinal0 [0x010AA2CF+1155791]
-	Ordinal0 [0x010DAAAF+1354415]
-	Ordinal0 [0x010DA71A+1353498]
-	Ordinal0 [0x010D639B+1336219]
-	Ordinal0 [0x010B27A7+1189799]
-	Ordinal0 [0x010B3609+1193481]
-	GetHandleVerifier [0x01385904+1577972]
-	GetHandleVerifier [0x01430B97+2279047]
-	GetHandleVerifier [0x01286D09+534521]
-	GetHandleVerifier [0x01285DB9+530601]
-	Ordinal0 [0x01194FF9+2117625]
-	Ordinal0 [0x011998A8+2136232]
-	Ordinal0 [0x011999E2+2136546]
-	Ordinal0 [0x011A3541+2176321]
-	BaseThreadInitThunk [0x76F000C9+25]
-	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+	Ordinal0 [0x00976903+2517251]
+	Ordinal0 [0x0090F8E1+2095329]
+	Ordinal0 [0x00812848+1058888]
+	Ordinal0 [0x00830B9D+1182621]
+	Ordinal0 [0x0082CA60+1165920]
+	Ordinal0 [0x0082A2CF+1155791]
+	Ordinal0 [0x0085AAAF+1354415]
+	Ordinal0 [0x0085A71A+1353498]
+	Ordinal0 [0x0085639B+1336219]
+	Ordinal0 [0x008327A7+1189799]
+	Ordinal0 [0x00833609+1193481]
+	GetHandleVerifier [0x00B05904+1577972]
+	GetHandleVerifier [0x00BB0B97+2279047]
+	GetHandleVerifier [0x00A06D09+534521]
+	GetHandleVerifier [0x00A05DB9+530601]
+	Ordinal0 [0x00914FF9+2117625]
+	Ordinal0 [0x009198A8+2136232]
+	Ordinal0 [0x009199E2+2136546]
+	Ordinal0 [0x00923541+2176321]
+	BaseThreadInitThunk [0x759F00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77977B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977B1E+238]
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -423,7 +423,7 @@ remote stacktrace: Backtrace:
 	... 89 more
 </failure>
   </testcase>
-  <testcase name="Escenario: Interactuar con el formulario #3" classname="Implementación Automatizaciones sobre la página DemoQa" time="4.193">
+  <testcase name="Escenario: Interactuar con el formulario #3" classname="Implementación Automatizaciones sobre la página DemoQa" time="4.425">
     <failure message="net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
 	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
 	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
@@ -432,7 +432,7 @@ remote stacktrace: Backtrace:
 	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
 	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
 	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs$accessor$8ZBOgYJd(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -444,41 +444,41 @@ remote stacktrace: Backtrace:
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
 	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
 	at stepdefinitions.AutomatizacionPaginaDemoQaStepDefinition.abrirPaginaWeb(AutomatizacionPaginaDemoQaStepDefinition.java:23)
-	at ✽.que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature:9)
+	at ✽.que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature:9)
 Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
 Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: ProvideNewDriver
 remote stacktrace: Backtrace:
-	Ordinal0 [0x011F6903+2517251]
-	Ordinal0 [0x0118F8E1+2095329]
-	Ordinal0 [0x01092848+1058888]
-	Ordinal0 [0x010B0B9D+1182621]
-	Ordinal0 [0x010ACA60+1165920]
-	Ordinal0 [0x010AA2CF+1155791]
-	Ordinal0 [0x010DAAAF+1354415]
-	Ordinal0 [0x010DA71A+1353498]
-	Ordinal0 [0x010D639B+1336219]
-	Ordinal0 [0x010B27A7+1189799]
-	Ordinal0 [0x010B3609+1193481]
-	GetHandleVerifier [0x01385904+1577972]
-	GetHandleVerifier [0x01430B97+2279047]
-	GetHandleVerifier [0x01286D09+534521]
-	GetHandleVerifier [0x01285DB9+530601]
-	Ordinal0 [0x01194FF9+2117625]
-	Ordinal0 [0x011998A8+2136232]
-	Ordinal0 [0x011999E2+2136546]
-	Ordinal0 [0x011A3541+2176321]
-	BaseThreadInitThunk [0x76F000C9+25]
-	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+	Ordinal0 [0x00976903+2517251]
+	Ordinal0 [0x0090F8E1+2095329]
+	Ordinal0 [0x00812848+1058888]
+	Ordinal0 [0x00830B9D+1182621]
+	Ordinal0 [0x0082CA60+1165920]
+	Ordinal0 [0x0082A2CF+1155791]
+	Ordinal0 [0x0085AAAF+1354415]
+	Ordinal0 [0x0085A71A+1353498]
+	Ordinal0 [0x0085639B+1336219]
+	Ordinal0 [0x008327A7+1189799]
+	Ordinal0 [0x00833609+1193481]
+	GetHandleVerifier [0x00B05904+1577972]
+	GetHandleVerifier [0x00BB0B97+2279047]
+	GetHandleVerifier [0x00A06D09+534521]
+	GetHandleVerifier [0x00A05DB9+530601]
+	Ordinal0 [0x00914FF9+2117625]
+	Ordinal0 [0x009198A8+2136232]
+	Ordinal0 [0x009199E2+2136546]
+	Ordinal0 [0x00923541+2176321]
+	BaseThreadInitThunk [0x759F00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77977B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977B1E+238]
 ). See below for more details.
 	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:159)
 	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
@@ -488,7 +488,7 @@ remote stacktrace: Backtrace:
 	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:913)
 	at net.serenitybdd.core.pages.PageObject.openUrl(PageObject.java:862)
 	at net.serenitybdd.screenplay.actions.OpenUrl.performAs(OpenUrl.java:18)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs$accessor$h1bDl3AN(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs$accessor$8ZBOgYJd(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -500,7 +500,7 @@ remote stacktrace: Backtrace:
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$oej6uRYd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.OpenUrl$ByteBuddy$OKWTTAP7.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
@@ -573,31 +573,31 @@ remote stacktrace: Backtrace:
 Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 96
 Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: ProvideNewDriver
 remote stacktrace: Backtrace:
-	Ordinal0 [0x011F6903+2517251]
-	Ordinal0 [0x0118F8E1+2095329]
-	Ordinal0 [0x01092848+1058888]
-	Ordinal0 [0x010B0B9D+1182621]
-	Ordinal0 [0x010ACA60+1165920]
-	Ordinal0 [0x010AA2CF+1155791]
-	Ordinal0 [0x010DAAAF+1354415]
-	Ordinal0 [0x010DA71A+1353498]
-	Ordinal0 [0x010D639B+1336219]
-	Ordinal0 [0x010B27A7+1189799]
-	Ordinal0 [0x010B3609+1193481]
-	GetHandleVerifier [0x01385904+1577972]
-	GetHandleVerifier [0x01430B97+2279047]
-	GetHandleVerifier [0x01286D09+534521]
-	GetHandleVerifier [0x01285DB9+530601]
-	Ordinal0 [0x01194FF9+2117625]
-	Ordinal0 [0x011998A8+2136232]
-	Ordinal0 [0x011999E2+2136546]
-	Ordinal0 [0x011A3541+2176321]
-	BaseThreadInitThunk [0x76F000C9+25]
-	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+	Ordinal0 [0x00976903+2517251]
+	Ordinal0 [0x0090F8E1+2095329]
+	Ordinal0 [0x00812848+1058888]
+	Ordinal0 [0x00830B9D+1182621]
+	Ordinal0 [0x0082CA60+1165920]
+	Ordinal0 [0x0082A2CF+1155791]
+	Ordinal0 [0x0085AAAF+1354415]
+	Ordinal0 [0x0085A71A+1353498]
+	Ordinal0 [0x0085639B+1336219]
+	Ordinal0 [0x008327A7+1189799]
+	Ordinal0 [0x00833609+1193481]
+	GetHandleVerifier [0x00B05904+1577972]
+	GetHandleVerifier [0x00BB0B97+2279047]
+	GetHandleVerifier [0x00A06D09+534521]
+	GetHandleVerifier [0x00A05DB9+530601]
+	Ordinal0 [0x00914FF9+2117625]
+	Ordinal0 [0x009198A8+2136232]
+	Ordinal0 [0x009199E2+2136546]
+	Ordinal0 [0x00923541+2176321]
+	BaseThreadInitThunk [0x759F00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77977B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977B1E+238]
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -635,8 +635,8 @@ remote stacktrace: Backtrace:
 </failure>
   </testcase>
   <system-out><![CDATA[?[92m|-- Example 1: {First Name=Gaia, Last Name=Zuluaga, Email=gaia@example.com, Gender=Female, Mobile=1234567890, Date of Birth=20 May 1998, Subjects=English, Hobbies=Sports, Current Address=cra 123, State=Uttar Pradesh, City=Lucknow, Gracias=Thanks for submitting the form}?[0m
-?[92m|---- Dado que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'?[0m
-?[92m|------ Carlos opens the https://www.youtube.com/?[0m
+?[92m|---- Dado que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'?[0m
+?[92m|------ Carlos opens the https://demoqa.com/?[0m
 Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
 ?[92m|-------- Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
 | First Name | Gaia |
@@ -662,8 +662,8 @@ Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableAr
 | City | Lucknow |
 | Gracias | Thanks for submitting the form |?[0m
 ?[92m|-------- Example 2: {First Name=Berlin, Last Name=Cruz, Email=berlin@example.com, Gender=Male, Mobile=6543219878, Date of Birth=15 Jul 2000, Subjects=Chemistry, Hobbies=Reading, Current Address=cra 234, State=Haryana, City=Panipat, Gracias=Thanks for submitting the form}?[0m
-?[92m|---------- Dado que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'?[0m
-?[92m|------------ Carlos opens the https://www.youtube.com/?[0m
+?[92m|---------- Dado que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'?[0m
+?[92m|------------ Carlos opens the https://demoqa.com/?[0m
 Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
 ?[92m|-------------- Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
 | First Name | Berlin |
@@ -689,8 +689,8 @@ Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableAr
 | City | Panipat |
 | Gracias | Thanks for submitting the form |?[0m
 ?[92m|-------------- Example 3: {First Name=Osiris, Last Name=Restrepo, Email=osiris@example.com, Gender=Other, Mobile=7896543210, Date of Birth=17 Jun 1963, Subjects=Biology, Hobbies=Music, Current Address=cra 345, State=Rajasthan, City=Jaipur, Gracias=Thanks for submitting the form}?[0m
-?[92m|---------------- Dado que 'Carlos' se encuentra en la pagina web 'https://www.youtube.com/'?[0m
-?[92m|------------------ Carlos opens the https://www.youtube.com/?[0m
+?[92m|---------------- Dado que 'Carlos' se encuentra en la pagina web 'https://demoqa.com/'?[0m
+?[92m|------------------ Carlos opens the https://demoqa.com/?[0m
 Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
 ?[92m|-------------------- Cuando seleccione la opcion de Forms con la categoria Practice Form con el registro de los datos
 | First Name | Osiris |
@@ -732,7 +732,7 @@ Escenario: Interactuar con el formulario(implementación-automatizaciones-sobre-
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: "--disable-notifications, -..., goog:chromeOptions: {args: [--", --disable-notifications, --enable-automation, --profile-directory=Default, --disable-web-security, --disable-plugins-discovery, --disk-cache-dir=null, --disable-popup-blocking, --disable-download-notifica..., --start-maximized, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --incognito"], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 4557
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 4274
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
@@ -743,31 +743,31 @@ ChromeDriver was started successfully.
 [Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
 Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: ProvideNewDriver
 remote stacktrace: Backtrace:
-	Ordinal0 [0x011F6903+2517251]
-	Ordinal0 [0x0118F8E1+2095329]
-	Ordinal0 [0x01092848+1058888]
-	Ordinal0 [0x010B0B9D+1182621]
-	Ordinal0 [0x010ACA60+1165920]
-	Ordinal0 [0x010AA2CF+1155791]
-	Ordinal0 [0x010DAAAF+1354415]
-	Ordinal0 [0x010DA71A+1353498]
-	Ordinal0 [0x010D639B+1336219]
-	Ordinal0 [0x010B27A7+1189799]
-	Ordinal0 [0x010B3609+1193481]
-	GetHandleVerifier [0x01385904+1577972]
-	GetHandleVerifier [0x01430B97+2279047]
-	GetHandleVerifier [0x01286D09+534521]
-	GetHandleVerifier [0x01285DB9+530601]
-	Ordinal0 [0x01194FF9+2117625]
-	Ordinal0 [0x011998A8+2136232]
-	Ordinal0 [0x011999E2+2136546]
-	Ordinal0 [0x011A3541+2176321]
-	BaseThreadInitThunk [0x76F000C9+25]
-	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+	Ordinal0 [0x00976903+2517251]
+	Ordinal0 [0x0090F8E1+2095329]
+	Ordinal0 [0x00812848+1058888]
+	Ordinal0 [0x00830B9D+1182621]
+	Ordinal0 [0x0082CA60+1165920]
+	Ordinal0 [0x0082A2CF+1155791]
+	Ordinal0 [0x0085AAAF+1354415]
+	Ordinal0 [0x0085A71A+1353498]
+	Ordinal0 [0x0085639B+1336219]
+	Ordinal0 [0x008327A7+1189799]
+	Ordinal0 [0x00833609+1193481]
+	GetHandleVerifier [0x00B05904+1577972]
+	GetHandleVerifier [0x00BB0B97+2279047]
+	GetHandleVerifier [0x00A06D09+534521]
+	GetHandleVerifier [0x00A05DB9+530601]
+	Ordinal0 [0x00914FF9+2117625]
+	Ordinal0 [0x009198A8+2136232]
+	Ordinal0 [0x009199E2+2136546]
+	Ordinal0 [0x00923541+2176321]
+	BaseThreadInitThunk [0x759F00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77977B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977B1E+238]
 ). See below for more details.?[0m
 [Test worker] ERROR  - ?[91m
   _____   ___   ___   _____     ___   ___   ___    ___    ___ 
@@ -777,7 +777,7 @@ remote stacktrace: Backtrace:
 
 Escenario
 ---------------------------------------------------------------?[0m
-[Test worker] ERROR  - ?[91m    Test failed at step: Carlos opens the https://www.youtube.com/?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: Carlos opens the https://demoqa.com/?[0m
 [Test worker] ERROR  - ?[91m    Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96?[0m
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature
 [Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
@@ -787,7 +787,7 @@ Escenario
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: "--disable-notifications, -..., goog:chromeOptions: {args: [--", --disable-notifications, --enable-automation, --profile-directory=Default, --disable-web-security, --disable-plugins-discovery, --disk-cache-dir=null, --disable-popup-blocking, --disable-download-notifica..., --start-maximized, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --incognito"], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 14654
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 30336
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
@@ -798,31 +798,31 @@ ChromeDriver was started successfully.
 [Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
 Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: ProvideNewDriver
 remote stacktrace: Backtrace:
-	Ordinal0 [0x011F6903+2517251]
-	Ordinal0 [0x0118F8E1+2095329]
-	Ordinal0 [0x01092848+1058888]
-	Ordinal0 [0x010B0B9D+1182621]
-	Ordinal0 [0x010ACA60+1165920]
-	Ordinal0 [0x010AA2CF+1155791]
-	Ordinal0 [0x010DAAAF+1354415]
-	Ordinal0 [0x010DA71A+1353498]
-	Ordinal0 [0x010D639B+1336219]
-	Ordinal0 [0x010B27A7+1189799]
-	Ordinal0 [0x010B3609+1193481]
-	GetHandleVerifier [0x01385904+1577972]
-	GetHandleVerifier [0x01430B97+2279047]
-	GetHandleVerifier [0x01286D09+534521]
-	GetHandleVerifier [0x01285DB9+530601]
-	Ordinal0 [0x01194FF9+2117625]
-	Ordinal0 [0x011998A8+2136232]
-	Ordinal0 [0x011999E2+2136546]
-	Ordinal0 [0x011A3541+2176321]
-	BaseThreadInitThunk [0x76F000C9+25]
-	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+	Ordinal0 [0x00976903+2517251]
+	Ordinal0 [0x0090F8E1+2095329]
+	Ordinal0 [0x00812848+1058888]
+	Ordinal0 [0x00830B9D+1182621]
+	Ordinal0 [0x0082CA60+1165920]
+	Ordinal0 [0x0082A2CF+1155791]
+	Ordinal0 [0x0085AAAF+1354415]
+	Ordinal0 [0x0085A71A+1353498]
+	Ordinal0 [0x0085639B+1336219]
+	Ordinal0 [0x008327A7+1189799]
+	Ordinal0 [0x00833609+1193481]
+	GetHandleVerifier [0x00B05904+1577972]
+	GetHandleVerifier [0x00BB0B97+2279047]
+	GetHandleVerifier [0x00A06D09+534521]
+	GetHandleVerifier [0x00A05DB9+530601]
+	Ordinal0 [0x00914FF9+2117625]
+	Ordinal0 [0x009198A8+2136232]
+	Ordinal0 [0x009199E2+2136546]
+	Ordinal0 [0x00923541+2176321]
+	BaseThreadInitThunk [0x759F00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77977B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977B1E+238]
 ). See below for more details.?[0m
 [Test worker] ERROR  - ?[91m
   _____   ___   ___   _____     ___   ___   ___    ___    ___ 
@@ -832,7 +832,7 @@ remote stacktrace: Backtrace:
 
 Escenario
 ---------------------------------------------------------------?[0m
-[Test worker] ERROR  - ?[91m    Test failed at step: Carlos opens the https://www.youtube.com/?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: Carlos opens the https://demoqa.com/?[0m
 [Test worker] ERROR  - ?[91m    Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96?[0m
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature
 [Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/Solucion%20screenplay/src/test/resources/features/automatizacion_pagina_demo_qa.feature is not under the 'features' directory. Requirements report will not be correctly generated!
@@ -842,7 +842,7 @@ Escenario
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: "--disable-notifications, -..., goog:chromeOptions: {args: [--", --disable-notifications, --enable-automation, --profile-directory=Default, --disable-web-security, --disable-plugins-discovery, --disk-cache-dir=null, --disable-popup-blocking, --disable-download-notifica..., --start-maximized, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --incognito"], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 45577
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 31466
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
@@ -853,31 +853,31 @@ ChromeDriver was started successfully.
 [Test worker] INFO  - ?[91mSTEP ERROR: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 96
 Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0AB3449', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: ProvideNewDriver
 remote stacktrace: Backtrace:
-	Ordinal0 [0x011F6903+2517251]
-	Ordinal0 [0x0118F8E1+2095329]
-	Ordinal0 [0x01092848+1058888]
-	Ordinal0 [0x010B0B9D+1182621]
-	Ordinal0 [0x010ACA60+1165920]
-	Ordinal0 [0x010AA2CF+1155791]
-	Ordinal0 [0x010DAAAF+1354415]
-	Ordinal0 [0x010DA71A+1353498]
-	Ordinal0 [0x010D639B+1336219]
-	Ordinal0 [0x010B27A7+1189799]
-	Ordinal0 [0x010B3609+1193481]
-	GetHandleVerifier [0x01385904+1577972]
-	GetHandleVerifier [0x01430B97+2279047]
-	GetHandleVerifier [0x01286D09+534521]
-	GetHandleVerifier [0x01285DB9+530601]
-	Ordinal0 [0x01194FF9+2117625]
-	Ordinal0 [0x011998A8+2136232]
-	Ordinal0 [0x011999E2+2136546]
-	Ordinal0 [0x011A3541+2176321]
-	BaseThreadInitThunk [0x76F000C9+25]
-	RtlGetAppContainerNamedObjectPath [0x77737B4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77737B1E+238]
+	Ordinal0 [0x00976903+2517251]
+	Ordinal0 [0x0090F8E1+2095329]
+	Ordinal0 [0x00812848+1058888]
+	Ordinal0 [0x00830B9D+1182621]
+	Ordinal0 [0x0082CA60+1165920]
+	Ordinal0 [0x0082A2CF+1155791]
+	Ordinal0 [0x0085AAAF+1354415]
+	Ordinal0 [0x0085A71A+1353498]
+	Ordinal0 [0x0085639B+1336219]
+	Ordinal0 [0x008327A7+1189799]
+	Ordinal0 [0x00833609+1193481]
+	GetHandleVerifier [0x00B05904+1577972]
+	GetHandleVerifier [0x00BB0B97+2279047]
+	GetHandleVerifier [0x00A06D09+534521]
+	GetHandleVerifier [0x00A05DB9+530601]
+	Ordinal0 [0x00914FF9+2117625]
+	Ordinal0 [0x009198A8+2136232]
+	Ordinal0 [0x009199E2+2136546]
+	Ordinal0 [0x00923541+2176321]
+	BaseThreadInitThunk [0x759F00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77977B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977B1E+238]
 ). See below for more details.?[0m
 ]]></system-err>
 </testsuite>

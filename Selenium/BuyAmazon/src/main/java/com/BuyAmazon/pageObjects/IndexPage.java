@@ -4,7 +4,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
-@DefaultUrl("")
+@DefaultUrl("https://www.amazon.com/-/es/ref=nav_logo")
 // https://www.amazon.com/-/es/ref=nav_logo
 public class IndexPage extends PageObject {
     By BAR_SEARCH = By.xpath("//input[@id='twotabsearchtextbox']");

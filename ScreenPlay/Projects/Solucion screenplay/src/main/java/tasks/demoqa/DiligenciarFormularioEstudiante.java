@@ -26,6 +26,7 @@ public class DiligenciarFormularioEstudiante implements Task {
     }
 
     @Override
+
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Scroll.to(BTN_FORMS));
         actor.attemptsTo(Click.on(BTN_FORMS));

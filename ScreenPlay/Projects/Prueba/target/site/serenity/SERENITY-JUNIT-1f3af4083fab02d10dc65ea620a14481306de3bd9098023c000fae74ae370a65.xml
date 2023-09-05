@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="3" failures="0" name="Login" skipped="0" tests="3" time="48.93" timestamp="2023-09-05 01:45:30"><testcase name="Login Exitoso"><error message="Step [he user enter the credentials] is defined with 0 parameters at 'stepsdefinitions.LoginStepDefinition.heUserEnterTheCredentials()'.&#10;However, the gherkin step has 1 arguments:&#10; * Table:&#10;      | cedula     | 1021396363                     |&#10;      | correo     | juadsalinas111@soy.sena.edu.co |&#10;      | contrasena | 1234                           |&#10;&#10;Step text: he user enter the credentials" type="io.cucumber.core.exception.CucumberException">Step [he user enter the credentials] is defined with 0 parameters at 'stepsdefinitions.LoginStepDefinition.heUserEnterTheCredentials()'.
+However, the gherkin step has 1 arguments:
+ * Table:
+      | cedula     | 1021396363                     |
+      | correo     | juadsalinas111@soy.sena.edu.co |
+      | contrasena | 1234                           |
+
+Step text: he user enter the credentials</error><system-err>Step [he user enter the credentials] is defined with 0 parameters at 'stepsdefinitions.LoginStepDefinition.heUserEnterTheCredentials()'.
+However, the gherkin step has 1 arguments:
+ * Table:
+      | cedula     | 1021396363                     |
+      | correo     | juadsalinas111@soy.sena.edu.co |
+      | contrasena | 1234                           |
+
+Step text: he user enter the credentials&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:64)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:104)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:73)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>

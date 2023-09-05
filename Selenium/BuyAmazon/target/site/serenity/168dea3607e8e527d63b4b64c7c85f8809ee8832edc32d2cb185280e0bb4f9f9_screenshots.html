@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-08-2023 17:25</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-09-2023 12:00</span>
     <br style="clear:left"/>
 </div>
 
@@ -197,9 +197,9 @@ Para luego proceder al pago
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Poner 3 productos en mi carrito de manera exitosa
+                                <span class="error-color">Poner 3 productos en mi carrito de manera exitosa
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -216,22 +216,55 @@ Para luego proceder al pago
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'//html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/div[1]/div[4]'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.BuyAmazon.steps.RegisterStep.sectionProduct(RegisterStep.java:28)<br />com.BuyAmazon.stepdefinitions.BuyAmazonStepDefinition.realizoLaBusqueda(BuyAmazonStepDefinition.java:26)<br />✽.realizo la busqueda(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/Selenium/BuyAmazon/src/test/resources/features/buyAmazon.feature:10)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource10720124243104090554.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="2ed9733e3e99f7617aa59df1fd1bfbf6454ee63e1315a4d94b13f0d37d143f1f.png" title=" Given Estoy en la pagina principal de Amazon" width="1034"/>
                 <img src="2ed9733e3e99f7617aa59df1fd1bfbf6454ee63e1315a4d94b13f0d37d143f1f.png" title=" Open browser" width="1034"/>
                 <img src="2ed9733e3e99f7617aa59df1fd1bfbf6454ee63e1315a4d94b13f0d37d143f1f.png" title=" Given Estoy en la pagina principal de Amazon (completed)" width="1034"/>
-                <img src="d450acbc47cd9f0f5a677f59c8802c9c9a4cea2d8c39f341dabf484b64b15eed.png" title=" When Ingreso nombre del producto en la barra de navegacion" width="1034"/>
-                <img src="d450acbc47cd9f0f5a677f59c8802c9c9a4cea2d8c39f341dabf484b64b15eed.png" title=" Enter and search" width="1034"/>
-                <img src="d450acbc47cd9f0f5a677f59c8802c9c9a4cea2d8c39f341dabf484b64b15eed.png" title=" When Ingreso nombre del producto en la barra de navegacion (completed)" width="1034"/>
-                <img src="9452fd299b3f809b4abed22cf6fea193c24586cbb2ee97e705c44321a64187df.png" title=" And realizo la busqueda" width="1034"/>
-                <img src="9452fd299b3f809b4abed22cf6fea193c24586cbb2ee97e705c44321a64187df.png" title=" Section product" width="1034"/>
-                <img src="9452fd299b3f809b4abed22cf6fea193c24586cbb2ee97e705c44321a64187df.png" title=" And realizo la busqueda (completed)" width="1034"/>
-                <img src="a1da101ab997a41d258ce43b4e79899d8187736dee353bb31b559076e442d463.png" title=" Then deberia aparecer el primer producto de mi busqueda" width="1034"/>
-                <img src="a1da101ab997a41d258ce43b4e79899d8187736dee353bb31b559076e442d463.png" title=" Register" width="1034"/>
-                <img src="a1da101ab997a41d258ce43b4e79899d8187736dee353bb31b559076e442d463.png" title=" Then deberia aparecer el primer producto de mi busqueda (completed)" width="1034"/>
-                <img src="a1da101ab997a41d258ce43b4e79899d8187736dee353bb31b559076e442d463.png" title=" When Hago clic en el producto y lo agrego al carrito" width="1034"/>
-                <img src="a1da101ab997a41d258ce43b4e79899d8187736dee353bb31b559076e442d463.png" title=" Then procedo al proceso de pago: <span class='success-color'>SUCCESS</span>" width="1034"/>
+                <img src="268f7c712695c8c4a82f0812f3f8b2b99501de2ed6d7f7f78ec871ecc1f44dde.png" title=" When Ingreso nombre del producto en la barra de navegacion" width="1034"/>
+                <img src="268f7c712695c8c4a82f0812f3f8b2b99501de2ed6d7f7f78ec871ecc1f44dde.png" title=" Enter and search" width="1034"/>
+                <img src="268f7c712695c8c4a82f0812f3f8b2b99501de2ed6d7f7f78ec871ecc1f44dde.png" title=" When Ingreso nombre del producto en la barra de navegacion (completed)" width="1034"/>
+                <img src="268f7c712695c8c4a82f0812f3f8b2b99501de2ed6d7f7f78ec871ecc1f44dde.png" title=" And realizo la busqueda" width="1034"/>
+                <img src="268f7c712695c8c4a82f0812f3f8b2b99501de2ed6d7f7f78ec871ecc1f44dde.png" title=" Section product: <span class='error-color'>ERROR</span>" width="1034"/>
             </div>
         </div>
 
