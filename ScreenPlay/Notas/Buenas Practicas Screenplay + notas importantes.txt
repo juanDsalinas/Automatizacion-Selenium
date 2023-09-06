@@ -1,0 +1,89 @@
+por cada Then tenemos una question 
+
+exceptions se utilizan en features 
+fallidos 
+
+libreria robot para los 
+comandos del teclado
+
+esa seria una interaction 
+
+Robot robot;
+{
+    try {
+        robot = new Robot();
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_MINUS);
+    } catch (AWTException e) {
+        e.printStackTrace();
+    }
+}
+
+paquetes en plural - Buenas practicas 
+
+componentes - pedasos que perduran en la pagina
+web - esto se pone en componentes
+
+1:17 - una hora con 17 un problema de audio 
+
+control + alt + L - organizar codigo
+
+maps se utilizan con clave - valor
+
+pagina para Xpaths -https://devhints.io/xpath
+
+--------------------------- Custom of Pages -------------------------------
+
+webdriver.driver=chrome
+webwebdriver.timeouts.implicitlywait = 10000
+chrome.switches = --lang=es,--disable-popup-blocking,--disable-download-notification,--start-maximized,--test-type,--ignore-certificate-errors, --allow-running-insecure-content, --disable-translate, --always-authorize-plugins, --disable-extensions,
+
+----------------------- dependencias --------------------------
+
+version '1.0-SNAPSHOT'
+
+tasks.withType(JavaCompile){ options.encoding = 'UTF-8' }
+group 'org.example'
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.81")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+defaultTasks 'clean', 'test', 'aggregate'
+
+
+dependencies {
+    //implementation 'net.serenity-bdd:serenity-core:2.0.81'
+    implementation 'net.serenity-bdd:serenity-core:2.0.81'
+    implementation 'net.serenity-bdd:serenity-junit:2.0.81'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    implementation 'net.serenity-bdd:serenity-screenplay:2.0.81'
+    implementation 'org.hamcrest:hamcrest-all:1.3'
+    implementation 'junit:junit:4.12'
+    implementation 'org.assertj:assertj-core:3.12.2'
+    implementation 'org.slf4j:slf4j-simple:1.7.26'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.0.52'
+    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.39'
+    implementation group: 'org.jvnet.com4j', name: 'com4j', version: '2.1'
+
+}
+
+
+
+
+
+
