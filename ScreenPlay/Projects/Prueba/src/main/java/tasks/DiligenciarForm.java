@@ -26,6 +26,5 @@ public class DiligenciarForm implements Task {
         actor.attemptsTo(Click.on(LoginPage.BTN_ACCEPT));
         actor.attemptsTo(Click.on(LoginPage.BTN_FINAL));
     }
-
-
+    
 }

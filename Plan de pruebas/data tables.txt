@@ -1,0 +1,56 @@
+?Outlet?, PQRS, -Mi cuenta-, -Bonos de regalo-, -Account-
+
+e. Infraestructura . g. Datos entrada y salida . h. Limitaciones/riesgos, reportes 
+
+data tables 
+
+1 - update addres
+|name|last name| gender|identificacion card|landline(telefono fijo) |cell phone | country| departament| city| addres | postal code| 
+| juan| salinas| Masculino| 10202020201| 2309812| 1234539082| colombia| bogota| bogota| calle 89 # 59 g - 28| 121212|  
+
+| name| last name| addres| city| departament| - question
+
+2 -  update addres Failed
+|name|last name| gender|identificacion card|landline(telefono fijo) |cell phone | country| departament| city| addres | postal code| 
+vacio, no tienen nada
+
+| name| last name| addres| city| departament| - question
+
+
+3 - Accound details 
+| name| last name| identification card| current password|new password| confirm new password| 
+|juan|salinas|1029393939|pepeito12@|papa@234|papa@234|
+
+4 - gift vauchers  - sucessfull
+| price |
+50000
+
+5 - gift vauchers - Failed
+| price |
+| 	|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
