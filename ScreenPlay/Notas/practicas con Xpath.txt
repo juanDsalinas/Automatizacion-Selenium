@@ -1,0 +1,20 @@
+Buscar un elemento el cual su texto contenga
+'ESS'
+
+//*[contains(text(),'ESS')]
+
+Buscar un elemento el cual su texto inicie
+con la letra 'J'
+//*[starts-with(text(),'J')]
+
+//ul/li[starts-with(text(),'Shadow')]
+
+//li[last()][@id='menu-item-31']
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+//ytd-rich-item-renderer[3]/div/ytd-rich-grid-media/div/div
+
+- Git - control de versiones
+
+abrimos vscode y en la terminal
+digitamos git init e inicia a 
+seguir la linea de cambios
+
+git status para mirar el status del
+archivo 
+
+git add . - añade todos los archivos
+para un commit 
+
+git commit -m + "mensaje"
+
+git log - nos devuelve una lista
+de nuestros commits 
+
+------------------ branch(ramas) --------------------
+git branch + "nombre de la rama"
+
+git branch - mirar las ramas que tenemos actualmente
+
+git branch -d + "nombre de la rama" - eliminar una rama
+
+git checkout + "nombre de la rama" - movernos entre ramas
+
+git log o git branch - mostrar en que rama estamos  
+
+commits deben ser cortos y conscisos 
+
+podemos unir juntos un git add y git commit 
+
+------- Fuciones de ramas --------------
+
+git merche + "nombre de la rama"
+OJO tenemos que estar en la rama principal
+para traer el cambio
+
+fast-forward - simple y automatico
+
+manual merfe - largo y manual
+
+cuando ocurre el manual merge
+tenemos que decidir que rama
+fusionamos - eliminando los 
+archivos que no necesitemos 
+
+git branch -d + "nombre de la rama" - para
+eliminar ramas
+
+- gitHub Bash
+git init
+
+-------------------Trabajar por la Nube ---------------------------
+GitHub - ya lo tenemos :) 
+
+git push origin + "nombre de la rama" - subir nuestros commits 
+en las diferentes ramas
+
+git pull origin + "nombre de la rama" - nos trae los cambios
+del repo 
+
+git clone + "link del repo" en consola
+y se copia todo lo del repo 
+
+copiamos el hash(id) del commit
+git checkout + "hash" 
+y nos devuelve el commit
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
