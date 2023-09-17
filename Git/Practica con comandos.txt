@@ -1,0 +1,18 @@
+git push --set-updtream origin + "nombre de la rama"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

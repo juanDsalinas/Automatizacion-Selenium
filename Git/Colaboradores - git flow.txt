@@ -1,0 +1,96 @@
+Tanto en 
+github, gitlab como en 
+bitbucket podemos agregar colaboradores
+a nuestros proyectos(repositorios)
+
+
+Git flow - 
+flujo de trabajo basado en git,
+que brinda mucho control en el 
+proceso de integracion continua,
+en comparacion con el desarrollo
+basado en troncos, gitflow
+tiene muchas tamas de mas duracion y
+mayores confirmaciones 
+
+git flow utiliza las dos ramas principales 
+las cuales son: 
+- master(representa la version final del proyecto)
+- develop - es la rama que recibe todas las actualizaciones
+aprobados
+
+- rama de errores(hotfix) - por si se daña la rama master
+en esta se realizan los cambios y luego se unen con la rama
+master nuevamente 
+
+¿ Porque implementarlo ?
+- mayor velocidad a la hora de entregar codigo
+- disminuimos los errores humanos al unir las ramas
+- elimina la dependencia de funcionalidades a la 
+hora de entregar el codigo a produccion 
+
+¿ Cuando implementarlo ?
+- en todos los proyectos(son buenas practicas)
+- cuando el equipo es de mas de dos personas
+- el proyecto cambia frecuentemente
+- se utilizan metodologias agiles, etc 
+
+flujo de trabajo - 
+en el correcto manejo y administracion de nuestras
+ramas, las cuales se basan en el versionado 
+
+en la rama master unicamente podemos hacer commit a las
+version que ya fueron aprobadas y van directamente a produccion
+
+en la rama develop contiene el codigo que conforma la siguiente 
+version del proyecto
+
+--------- Ramas auxiliares ---------
+ademas se proponen 3 ramas auxiliares
+- feature - esta rama se utiliza para desarrollar
+nuevas caracterisitcas que cuando se terminan se 
+incorporan a la rama develop
+
+	- se crean a partir de la rama develop
+	- siempre se fusiona con la rama develop
+
+- release - estas ramas preparan el codigo para produccion
+lo limplian los bugs antes de pasar a la rama master 
+
+	- se crean a partir de la rama master
+	- las fusionamos a la rama master y develop
+
+- hotflix - verifican errores y bugs en produccion
+	- se crean a partir de la rama master 
+	- las fusionamos a la rama master y develop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

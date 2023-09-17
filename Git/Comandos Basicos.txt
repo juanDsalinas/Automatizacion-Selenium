@@ -1,0 +1,46 @@
+Comandos Basicos - 
+existen comandos que nos ayudan
+a interactuar con el repositorio
+y las diferentes ramas creadas 
+cuando utilizamos un entorno grafico
+de versionamiento(github desktop) nosotros
+no vemos los comandos de manera directa 
+
+para ver mas acerca de los comandos basicos
+de git, ver el pdf 
+
+Readme - 
+es un archivo plano el cual sirve para
+indicarle a otras personas porque nuestro 
+proyecto es util, que puede hacer y como
+lo pueden usar 
+
+estos normalmente incluyen informacion sobre:
+que hace el proyecto
+porque el proyecto es util
+como pueden comenzar con el proyecto
+donde pueden recibir ayuda los usuarios
+quien mantiene y contribuye con el proyecto
+
+link para un ejemplo de readme 
+https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a
+
+gitignore - en este archivo le indicamos a git
+que archivos debe ignorar 
+cada linea de nuestro gitignore especifica un patron
+y git verifica las rutas especificadas para ignorarlas 
+
+
+link para un ejemplo de gitignore 
+
+
+Registramos los cambios de nuestro proyecto con
+el comando git add . 
+
+
+
+
+
+
+
+

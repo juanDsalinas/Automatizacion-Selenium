@@ -1,0 +1,20 @@
+Pull request - 
+es como una propuesta que
+se realiza de una rama a otra
+para que se unan(mergear) 
+mientras se valida se puede presentar
+lo siguiente : 
+- build(validaciones automaticas)
+- asignacion de codigo a tareas
+- validaciones manuales por parte del equipo
+- despliegues
+
+para realizar mejores pull request es mejor
+realizarlos de manera frecuente, es como agragar 
+poco a poco y no que todos hagan su parte por 
+separado y se peleen por que quedo deforme(ejemplo del dibujo)
+
+es recomendable que por cada pull request haya dos revisores 
+
+
+

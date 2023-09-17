@@ -70,19 +70,14 @@ git checkout + "hash"
 y nos devuelve el commit
 
 
- 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+Feature: Login
+  Scenario: register Sucessfull
+    Given the user is in the index page
+    When the user clicks on nav-bar and select the option login
+    And the user enter the credential to register
+    Then the user should see their information

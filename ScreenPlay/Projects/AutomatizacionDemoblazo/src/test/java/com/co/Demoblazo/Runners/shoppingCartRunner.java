@@ -1,6 +1,4 @@
 package com.co.Demoblazo.Runners;
-
-
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberSerenityRunner;
 import org.junit.runner.RunWith;
@@ -11,6 +9,7 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         glue = "com.co.Demoblazo.StepsDefinitions"
 )
+
 public class shoppingCartRunner {
 
 }

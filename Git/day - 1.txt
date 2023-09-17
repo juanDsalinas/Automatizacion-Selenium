@@ -1,0 +1,90 @@
+Introduccion to git and gitHub 
+
+control de versiones -
+gestion de los cambios por
+los cuales pasa un producto,
+permite crear un historial de 
+versiones sobre el producto 
+
+sistemas de control de versiones -
+estas herramientas permiten facilitar
+la administracion de las distintas 
+versiones de un producto 
+
+Git - 
+se creo con base a dos principios :
+eficiencia y confiabilidad del
+mantenimiento de versiones de las 
+aplicaciones cuando poseen muchos
+archivos y existen muchos colaboradores
+
+caracteristicas - 
+- correcta gestion y eficiencia
+en proyectos muy grandes
+- gestion distribuida
+- agilidad en la gestion de las ramas
+
+Herramientas - 
+gitHub, gitLab,
+Atlassian Bitbucket,
+GitKraken
+
+Diseño de git -
+para su creacion se tuvo que 
+tener en cuenta: rendimiento,
+seguridad y flexibilidad 
+todas sus funciones estan
+altamente optimizadas para
+que sea mejor su rendimiento
+
+dado a su algoritmo git aprovecha
+el conocimiento sobre los atributos
+comunes de los arboles de archivos 
+de codigo fuente reales, como se modifican
+y cuales son sus patrones de acceso
+
+Seguridad - 
+git es muy seguro, todos los
+objetos en el repositorio de git
+estan protegidos con un algoritmo
+de hash criptograficamente seguro 
+llamado SHA1  
+
+podemos tener una trazabilidad de contenido
+autentica de nuestro codigo fuente 
+
+
+Flexibilidad - 
+-git ofrece mucha flexibilidad
+a la hora de soporta muchos flujos
+de trabajo de desarrollo no lineal
+- eficiencia en los proyectos
+- compatibilidad con muchos sistemas 
+y protocolos existentes 
+
+
+Flujo de trabajo - 
+nuestro repositorio local
+esta compuesto por tres
+arboles que maneja Git . 
+
+- el primero es el Working Directory 
+que contiene los archivos en la maquina
+local
+
+- el segundo es el Staging Area que actua
+como una zona intermedia
+
+- el ultimo es Repository que apunta al 
+ultimo commit realizado 
+
+
+- Ramas - 
+las ramas son utilizadas para crear
+funcionalidades aisladas, cuando creamos
+un repositorio la rama master es la que 
+principial(viene por defecto), creamos
+ramas durante el desarrollo y luego las
+fusionamos a la rama principal cuando
+terminamos 
+

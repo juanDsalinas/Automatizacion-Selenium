@@ -10,5 +10,5 @@ public class IndexPage {
     public static final Target RESULT_PRODUCT = Target
             .the("first result product for the option 'Monitors' ")
             .locatedBy("//div[@class='row']//div[contains(@class,'card')]/a");
-
+    
 }

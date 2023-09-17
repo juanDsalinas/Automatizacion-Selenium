@@ -1,0 +1,97 @@
+resolviendo conflictos - 
+
+para hacer merge desde una rama a otra se hace de la
+siguiente manera :
+
+git merge "ramaOrigin" -m "comentario"
+
+
+Sourcetree - 
+es una herramienta grafica
+la cual nos permite trabajar con los sistemas de 
+versionado de manera grafica - 
+- crear y clonar repositorios 
+sirve con git, mercurial, bitbucket y github
+- nos permite realizar commit, push, pull y merge
+de nuestros archivos
+- detectar y resolver conflictos
+- consultar el historial de cambios de nuestros
+repositorios 
+
+
+gitHub - 
+es una plataforma de alojamiento de microsoft,
+permite a los desarrolladores crear
+repositorios de codigo y guardarlos en la nube
+usando git 
+
+----- Ventajas ----
+- permite alojar repositorios de forma gratuita
+- te brinda la posibilidad de personalizar tu plataforma
+- tambien se pueden crear repositorios privados
+- podemos crear paginas web estaticas con github pages
+- facilita compartir proyectos 
+- trabajamos de manera colaborativa
+- ayuda a reducir errores humanos y escribir mejor codigo 
+con github copilot 
+
+
+gitLab - 
+es una herramienta de ciclo de vida 
+y repositorio de git, permite gestionar 
+diversas tareas tales como : 
+
+- planificacion
+- gestion de codigo fuente
+- el mantenimiento de la seguridad
+- el seguimiento
+
+---- Ventajas ----
+- gitlab es facil de configurar y de
+administrar con sus codigos disponibles
+gratuitamente
+
+- la aplicacion es unica, crea un flujo de 
+trabajo optimizado y eficiente
+
+- las revisiones de codigo junto con
+las estracciones del mismo son faciles de
+hacer y compactas 
+
+- como es de la nube, ofrece mucha seguridad
+como restricciones granulares, autenticacion 
+de usuario con kerberos
+
+- integracion minima para reducir el ciclo de
+vida del software aumentando la productividad
+
+- permite gestionar proyectos de manera amplia 
+y adaptable acelerando el flujo de trabajo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

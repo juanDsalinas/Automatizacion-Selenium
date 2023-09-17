@@ -14,16 +14,15 @@ import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
 import questions.CompareProduct;
 import tasks.Login;
+
 import userinterfaces.LoginPage;
-//import questions.CompareProduct;
-//import tasks.Login;
 
 import java.util.regex.Matcher;
 
 public class LoginStepDefinition {
 
     // indicamos el driver a utilizar
-    @Managed(driver="chrome")
+    @Managed
     WebDriver hisBrowser;
 
     @Before
@@ -31,7 +30,7 @@ public class LoginStepDefinition {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("Juan");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
-    }
+
 
     @Given("he user enter to web page")
     public void heUserEnterToWebPage() {

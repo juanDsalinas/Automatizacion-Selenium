@@ -1,0 +1,9 @@
+resolviendo conflictos - 
+
+para hacer merge desde una rama a otra se hace de la
+siguiente manera :
+
+git merge "ramaOrigin" -m "comentario"
+
+
+Sourcetree - 
