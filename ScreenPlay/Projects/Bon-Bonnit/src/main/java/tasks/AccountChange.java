@@ -22,7 +22,7 @@ public class AccountChange implements Task {
 
                 Click.on(AddressPage.COUNTRY),
                 Enter.theValue("Colombia").into(AddressPage.COUNTRY),
-                SendKeys.of(Keys.ENTER).into(AddressPage.DEPARTAMENT),
+                Hit.the(Keys.ENTER).into(AddressPage.DEPARTAMENT),
 
                 Click.on(AddressPage.DEPARTAMENT),
                 Enter.theValue("Distrito").into(AddressPage.DEPARTAMENT),

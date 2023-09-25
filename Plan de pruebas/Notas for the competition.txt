@@ -1,0 +1,51 @@
+Descripcion - de que hace 
+el aplicativo y el proposito del
+plan de pruebas
+
+Alcance - Especificar desde donde hasta
+donde vamos a probar(validar) y que 
+vamos a probar(validar)
+
+Validar que el formulario distinga entre datos
+
+Fuera de alcance - Especificar que "no" vamos
+a probar(validar)
+
+tener presenta lo siguiente -
+No se verificará la información de pago
+No se verificarán los tiempos de espera al momento de realizar las diferentes acciones dentro del sistema
+No se v
+alidará la información del módulo About
+No se realizarán pruebas de concurrencia, carga y estrés del sistema
+
+
+Estrategia - como vamos a realizar la 
+automatizacion y todo lo necesario para ella
+
+Prerrequisitos - que debemos tener
+todo lo fisico para realizar
+las automatizaciones y de configuracion
+
+
+infraestructura -  todo necesario
+(herramientas)
+
+
+datos - lo que nos van a dar para automatizar
+no poner nada especifico si no nos lo dan
+solo nombres de lo que necesitamos 
+
+supuestos - todo lo que normalmente se supone
+para realizar una automatizacion
+
+limitaciones - todo lo que pueda impedir
+que la automatizacion no se realice 
+correctamente
+
+bugs - casos que no funcionan
+
+casos de prueba - en la descripcion
+poner para que sirve es caso de prueba
+(validar tal cosa)
+
+Riegos - cosas que pueden salir mal

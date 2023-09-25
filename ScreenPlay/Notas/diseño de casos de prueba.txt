@@ -1,0 +1,396 @@
+Contexto de pruebas funcionales -
+- pruebas funcionales - prueban las funcionalidades
+del sistema para ver que funcionen correctamente 
+por ejemplo que un carro sirva
+
+las funcionalidades describen el rendimiento, etc
+- caja negra - visual - una entrada y una salida
+(front-end)
+
+- caja blanca - interno - nos interesa como funciona 
+adentro 
+	- user + password = token = clave de seguridad
+caja blanca - pruebas unitarias - prueban funcionalidades separadas
+(correo mal escrito, contraseña, las letras, etc)
+
+- pruebas de integracion - cuando integramos un modulo
+(con el token probar un modulo)
+
+- pruebas de servicio - pruebas de las Apis 
+pruebas para probar servicios(paises de una lista)
+para ver que me traiga la informacion correcta 
+
+- Caja Negra - 
+	- smoke test - verifica lo minimo que necesita la pagina
+para servir - btn, form, hamburger - navbar
+
+- Pruebas E2E - inicio al final - prueban todo el flujo del negocio -
+prueban todo el proceso, Account - todos los flujos que me ofrece, 
+super completo  
+
+- pruebas de regresion - cuando ya tenemos un software completo
+pero tiene actualizan - 
+ejemplo - modulo entre bancos - garantizan que lo que ya esta, no
+se dañe 
+
+- pruebas de aceptacion - criterios de aceptacion - 
+los puntos que nos dan los patrones - en las historias 
+de usuario 
+
+- criterios de aceptacion(condiciones para el login
+Ejemplo : minimo 8 caracteres, debe tener el correo un arroba"@")
+
+- pruebas de integracion
+- integraciones modulares - (logueo integrado con los productos)
+- integraciones externas - conexiones de la bd, excel, paginas externas
+
+- pruebas exploratorias - pruebas livianas
+la hace quien conoce mucho el aplicativo -
+son pruebas flash para tomar rapido el test 
+
+------------------------------ Metodologia - Documentacion ------------------------------------
+
+Plan de pruebas - Test Plan
+- almacen informacion de lo que se va
+a probar 
+
+----------------------- items ----------------------------
+- descripcion - nos indiquen
+que estamos probando, como, hasta 
+donde
+
+- Alcance - alcance de las pruebas,
+desde donde hasta donde vamos a probar
+un aplicativo - que modulos vamos a probar
+Desde donde hasta a donde 
+(Mas especifico) - sin criterios de aceptacion
+
+- Fuera del alcance - lo que no voy a probar 
+
+- Estrategia - como vamos a realizar nuestras pruebas 
+	- con criterios de aceptacion 
+
+Login - 
+minimo de 8 caracteres 
+usuarios incorrectos
+
+flujo critico - el fin del negocio
+compras - comprar 
+
+por lo general se automatizan los modulos E2E
+
+- prerequisitos - 
+materiales necesarios para la automatizacion
+- que la pagina web funcione 
+- que las pruebas manuales se ejecuten satisfactoriamente
+- acceso a vpn 
+- Java
+- Chrome
+
+- Infraestructua - materiales necesarios para la automatizacion
+- pc core i5 conn 8gb de ram 
+- navegacion de internet
+- almacenamiento en la nube
+- intelliJ
+- Java
+- Chrome
+
+- Datos - informacion necesaria para los datos
+- roles configurados con sus permisos
+- credenciales para el logueo
+- acceso a la bd para validar 
+
+- Supuestos - 
+datos correctos  
+navegacion = 300mbps 
+
+Limitaciones - los limites(incumplen con lo minimo)
+- limitacion menor a 300mbps
+- core 2 con 4gb ram
+- credenciales incorrectas 
+
+Casos de prueba # 1 - 
+- composicion : 
+
+- id - 1
+- nombre - modulo login
+
+- descripcion - se validara el acceso
+al login correctamente 
+
+- datos - mauricio, 1234 
+
+- paso a paso - 
+ingresar a la pagina web - url 
+ingresar al modulo de login
+ingresar usuario - username
+ingresar contraseña - password
+dar clic en login
+
+prerequisito - agregar un producto al 
+carrito de compras
+
+- resultado esperado - usuario logueado
+exitosamente - usuario no se loguo
+correctamente
+
+- resultado obtenido - usuario logueado
+exitosamente - usuario no se logueo
+
+- ciclo 1 -
+si fue mal - rojo - no se pone hasta que 
+se realizan las automatizaciones
+
+- ciclo 2 -
+la segunda vez que se realiza - no se pone hasta
+que se realizan las automatizaciones 
+
+- responsable -
+quien lo realizo 
+
+pruebas manuales - las que yo las hago 
+
+Es automatizable -
+si / no
+
+
+Caso de prueba # 2 -
+id 2
+modulo - login 
+
+Login(correcto/incorrecto)
+
+se validara que no me permite el 
+acceso si tiene credenciales incorrectas
+
+---------
+resultado esperado
+- producto en el carrito
+
+resultado obtenido 
+- producto en el carrito 
+
+
+feature - Login
+- todo lo de login
+y asi con cada feature 
+
+------------------ RIESGOS - APARTE ---------------------------------
+Investigar - historias de usuario
+
+Riesgos - es algo que no contemplamos,
+ejemplos -
+
+riesgos - voy en el carro y agarro un
+hueco(me puedo matar)
+
+situaciones que pueden pasar, tener un
+plan por si pasan 
+
+impacto - terminar en las drogas
+
+gestion de los riesgos - 
+mitigamos los riesgos 
+
+tipos de riesgos - 
+
+proyecto - tiempos de recursos
+- Ejemplo - si alguien del proyecto
+se muere, la documentacion paila, 
+
+producto - perjudican la
+calidad - el producto no gusta o falla
+
+- Ejemplo - mucho flujo de personas
+al tiempo en el software
+
+negocio - perjudican el negocio
+
+- Ejemplo - si falla, perdimos plata,
+mal servicio, credibilidad, etc 
+
+
+Estimacion de riesgos - 
+
+identificamos el riesgo
+
+analisamos el riesgo
+
+priorizamos - alto, medio, bajo
+
+impacto
+
+------------ Identificacion de riesgos --------------------------
+redaccion de los riesgos 
+	claramente hecho
+
+probabilida de(evento)
+debido a(causa)
+
+lo que puede ocasionar(efecto)
+
+- calificacion de los riesgos 
+probabilidad - 
+
+impacto - insignificante
+extremo
+
+analisis cuantitativo
+
+probabilidad de ocurrencia 
+
+
+--- Tratamiento de riesgos ------
+evitar 
+mitigar
+transferir - seguridad informatica
+aceptar - lo que dios quiera
+explotar 
+mejorar la baja insidencia
+compartir 
+
+- Bugs - bugTracker - 
+
+id - 1
+
+nombre - login
+
+descripcion - Me deja acceder
+a la pagina sin credenciales
+
+pasos a reproducir - 
+enter the web page
+enter empty the credential
+click in btn login 
+
+evidencias - 
+tomar pantallazos y pegarlas 
+
+responsable a solucionar - name
+inventado 
+
+Mauricio Q-Vision - 3015331664
+
+
+
+
+
+
+
+
+papappa
+
+Login - 
+
+Validar que el formulario de login 
+distinguira entre datos validos y no validos
+
+Validar que el formulario de login
+distinguira entre usuarios activos e inactivos 
+
+Validar que el formulario de login 
+no permitira el acceso al aplicativo con 
+campos vacios
+
+Validar que el modulo de login permite
+correctamente el ingreso de credenciales y caracteres
+especiales
+
+Menu principal - 
+
+Validar la correcta navegabilidad entre el munu principal
+y los diferentes sub-modulos
+
+Validar que al ingresar al sistema, la visualizacion de
+los productos se realice de manera correcta,
+mostrando los detalles de cada uno de estos(nombre,
+descripcion y precio)
+
+Validar que el filtro permita reorganizar los productos
+correctamente de acuerdo a las siguiente opciones
+(Nombre(A-Z),(Z-A), precio(MAYOR - MENOR),(MENOR - MAYORs))
+
+Validar que el boton de "agregar al carrito" agregue
+correctamente un producto al carrito 
+
+Validar que el boton de "eliminar" elimine correctamente
+un producto del carrito
+
+Validar que al momento de clickear en un producto 
+cualquiera se puedan visualizar todos los detalles de este
+(nombre, descripcion,precio)
+
+Validar que al momento de dar click en el boton de 
+"cerrar sesion" se cierre la sesion del usuario y
+se redirija al modulo de login 
+
+Validar que desde el menu principal 
+se pueda refrescar la data de la pagina web vaciando por
+completo los productos del carrito
+
+Validar que clickeando al icono del carrito se pueda
+acceder al lista de productos que este contiene mostrando
+(nombre, descripcion y precio)
+
+
+Carrito -
+
+Validar que el boton "remove" elimine un producto
+del carrito 
+
+Validar que al momento de clickear un producto 
+cualquiera se puedan visualizar los detalles de este
+(nombre, descripcion, precio)
+
+Validar que el boton "checkout" permite pasar 
+correctamente a la pasarela de pago 
+
+Validar que desde el carrito se pueda devolver 
+al menu principal 
+
+Compra - 
+
+Validar que los campos del formulario de informacion 
+permitan ser rellenados correctamente
+
+Validar que se visualicen correctamente los detalles del
+pedido, estos son: detalles de los productos, detalles del
+pedido y el total de este
+
+Validar que se nos permita finalizar la compra correctamente
+
+Validar que al momento de finalizar la compra  
+
+Validar que la pasarela de pago permita llenar los campos
+correctamente
+
+Validar que la pasarela de pago permita cancelar el proceso
+de pago(no eliminar los productos del carrito)
+
+Validar que el modulo de pago muestre un listado con
+los productos que se encontran en el carrito ademas 
+de la descripcion del pedido(codigo del pedido, descripcion
+del pedido y precio total)
+
+Validar que el modulo de pago permita cancelar una compra 
+correctamente
+
+Validar que el modulo de pago permita finalizar una compra
+correctamente
+
+Validar que al finalizar la compra muestre
+un mensaje de agradecimiento
+
+Validar que al finalizar la compra permita
+volver al menu principal 
+
+
+
+
+
+
+
+
+
+
+

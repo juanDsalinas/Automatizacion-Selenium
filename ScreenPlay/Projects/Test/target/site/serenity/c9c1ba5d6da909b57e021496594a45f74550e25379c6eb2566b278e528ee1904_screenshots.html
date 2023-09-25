@@ -130,9 +130,9 @@
             <span class="breadcrumbs">
                 <a href="index.html">Home</a>
                 > <span class="truncate-40"><a
-                    href="381aead9d60e3ae50b919d1fec98ca2c1e55a302b1dc866a552765eccab28901.html">Account</a></span>
+                    href="35acd25061ef968d46e36d98312e2afc90fcd7cd67aaf7e2cb466a6a3aed549f.html">Cart</a></span>
                 > <span class="truncate-60"><a
-                    href="2d31de143af0ed3c4eab78c7c6f4af73a213e1ef53bd9c0cc059750ef3d0cc4c.html">change address Sucesfull </a></span>
+                    href="c9c1ba5d6da909b57e021496594a45f74550e25379c6eb2566b278e528ee1904.html">show details of shopping cart </a></span>
                 > Screenshots
             </span>
         </div>
@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-09-2023 07:57</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-09-2023 07:43</span>
     <br style="clear:left"/>
 </div>
 
@@ -170,7 +170,7 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">Account </span>
+                                    <span class="story-header-title">Cart </span>
                                     <span class="badge tag-badge" style="">Feature</span>
                                 </h3>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">change address Sucesfull
+                                <span class="failing-color">show details of shopping cart
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,7 +214,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -230,13 +230,20 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>tasks.AccountChange.performAs(AccountChange.java:14)<br />stepsdefinitions.AccountStepDefinitions.theUserChangeTheirAddresAndSaveTheChanges(AccountStepDefinitions.java:34)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>tasks.Login.performAs(Login.java:31)<br />stepsdefinitions.CartStepDefinitions.theUserIsInTheIndexPage(CartStepDefinitions.java:30)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //select[@id='dropdown'] to be enabled (tried for 20 second(s) with 100 milliseconds interval)</pre>
+                        <pre>tasks.Login.performAs(Login.java :31)<br />stepsdefinitions.CartStepDefinitions.theUserIsInTheIndexPage(CartStepDefinitions.java :30)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -244,43 +251,14 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource14699493856391822464.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource8147018871662101061.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="11ff0f836e267b22bc7cba52cae722fdf6e6adfd370103df5f89e1580f4a727e.png" title=" Given the user is in the login page" width="1366"/>
-                <img src="0d697fd5ab4e622122318b166f348a5a8313f04f0022b4f7a4f5c2f08ca7dd40.png" title=" Given the user is in the login page (completed)" width="1366"/>
-                <img src="ef16dd938fb43270fc47ba1da237578828b9ddcb4f77f9889bd75f32b62c37d0.png" title=" When the user enter the credentials" width="1366"/>
-                <img src="ef16dd938fb43270fc47ba1da237578828b9ddcb4f77f9889bd75f32b62c37d0.png" title=" User login" width="1366"/>
-                <img src="ef16dd938fb43270fc47ba1da237578828b9ddcb4f77f9889bd75f32b62c37d0.png" title=" User enters '1021396262' into the input username" width="1366"/>
-                <img src="2aa98520665a5dc846319339e8503a43adbea7853b443f9922795757cd84f05f.png" title=" User enters '1021396262' into the input username (completed)" width="1366"/>
-                <img src="2aa98520665a5dc846319339e8503a43adbea7853b443f9922795757cd84f05f.png" title=" User enters 'Salinas20066' into the input password" width="1366"/>
-                <img src="18fce574856273bf168ad1ba11e803a1f407ceba71b3d4037a649d594252d3cb.png" title=" User enters 'Salinas20066' into the input password (completed)" width="1366"/>
-                <img src="789ae97c473c22fd845bcafe6e80db2d61c3fede5b0df7f927844346cd3e92bd.png" title=" User clicks on the btn login" width="1366"/>
-                <img src="f3cb76596de55acdda7ae8e8f8682596a93ab3b3594cedf64fcc610edce9c3d8.png" title=" User clicks on the btn login (completed)" width="1366"/>
-                <img src="f3cb76596de55acdda7ae8e8f8682596a93ab3b3594cedf64fcc610edce9c3d8.png" title=" User login (completed)" width="1366"/>
-                <img src="fe85426d827d749c01fb70793e9e9be918f7adde944b3d6a5a81f9b059d0cd5f.png" title=" When the user enter the credentials (completed)" width="1366"/>
-                <img src="1b52d6053ee233302e250629e5d05d8ba3407b6524fff9e04dbec6ae5d894e26.png" title=" And the user clicks on the addres option" width="1366"/>
-                <img src="1b52d6053ee233302e250629e5d05d8ba3407b6524fff9e04dbec6ae5d894e26.png" title=" User account" width="1366"/>
-                <img src="1b52d6053ee233302e250629e5d05d8ba3407b6524fff9e04dbec6ae5d894e26.png" title=" User clicks on addres option" width="1366"/>
-                <img src="1b52d6053ee233302e250629e5d05d8ba3407b6524fff9e04dbec6ae5d894e26.png" title=" User account (completed)" width="1366"/>
-                <img src="890d50d800fb5fd3c919da84141771b34541608e5e412ed791107eef47bf7133.png" title=" And the user clicks on the addres option (completed)" width="1366"/>
-                <img src="890d50d800fb5fd3c919da84141771b34541608e5e412ed791107eef47bf7133.png" title=" And the user change their addres and save the changes" width="1366"/>
-                <img src="890d50d800fb5fd3c919da84141771b34541608e5e412ed791107eef47bf7133.png" title=" User account change" width="1366"/>
-                <img src="530ca4c60e611d28bcff21ad6109773127a6f215c6b538eb7656cb5ac54c3f13.png" title=" User clicks on the tbn to edit their address" width="1366"/>
-                <img src="c70f814329f4ffb8a36b86c9bd7d3f6826822d69f2d19ef4070aabe2485b880c.png" title=" User enters 'Jose' into the field of name" width="1366"/>
-                <img src="2aad950efc64903158a89a79dc09566107a81f2b648a3d5b13163377d80ad1f5.png" title=" User enters 'Jose' into the field of name (completed)" width="1366"/>
-                <img src="b5029af588cf138d91c6baa6a7b9f9067ba6df4a165f246d187221f179b72ac4.png" title=" User enters 'Mu&Atilde;&plusmn;oz' into the field of last name" width="1366"/>
-                <img src="5af81fbd2142b69206499c242ae838d70a4e0c0f82ad9b1ee3d3a6c812701814.png" title=" User enters 'Mu&Atilde;&plusmn;oz' into the field of last name (completed)" width="1366"/>
-                <img src="5af81fbd2142b69206499c242ae838d70a4e0c0f82ad9b1ee3d3a6c812701814.png" title=" User clicks on the field of last name" width="1366"/>
-                <img src="4da3caa8b7d59695cacdf69f951e19eff7a42d88e5ed2effa2121560e17e7fe1.png" title=" User clicks on the field of last name (completed)" width="1366"/>
-                <img src="d9de9cf434fed250f446f48b8ab90c01b48d94609cb5a90ff2316c270f94bf38.png" title=" User enters '3103256881' into the field of phone number" width="1366"/>
-                <img src="a743a0395c93df1e2ac45e486f0b4dd34c6bdb9f34aba0b3c2a4d4d151605f17.png" title=" User enters '3103256881' into the field of phone number (completed)" width="1366"/>
-                <img src="a743a0395c93df1e2ac45e486f0b4dd34c6bdb9f34aba0b3c2a4d4d151605f17.png" title=" User clicks on the droplist of country" width="1366"/>
-                <img src="64232d51780f5b36c8edb3c12f9c7a1a54c43f236ebf46a3b7ccab149b83d5ae.png" title=" User clicks on the droplist of country (completed)" width="1366"/>
-                <img src="64232d51780f5b36c8edb3c12f9c7a1a54c43f236ebf46a3b7ccab149b83d5ae.png" title=" User enters 'Colombia' into the droplist of country" width="1366"/>
-                <img src="64232d51780f5b36c8edb3c12f9c7a1a54c43f236ebf46a3b7ccab149b83d5ae.png" title=" User enters 'Colombia' into the droplist of country (completed): <span class='error-color'>ERROR</span>" width="1366"/>
+                <img src="5700e1d24de81182e51de54bd5ea505ed1f6dad07ec17d8a5393baa41a4e3760.png" title=" Given the user is in the index page" width="1034"/>
+                <img src="5700e1d24de81182e51de54bd5ea505ed1f6dad07ec17d8a5393baa41a4e3760.png" title=" Juan login" width="1034"/>
+                <img src="5700e1d24de81182e51de54bd5ea505ed1f6dad07ec17d8a5393baa41a4e3760.png" title=" Juan selects index 2 in dropdown to choose a option: <span class='failing-color'>FAILURE</span>" width="1034"/>
             </div>
         </div>
 

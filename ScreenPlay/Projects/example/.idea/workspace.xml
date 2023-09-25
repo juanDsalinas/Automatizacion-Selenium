@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="453060e7-d165-4d1e-b8a4-0b4fdd0633e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Bon-Bonnit/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bon-Bonnit/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bon-Bonnit/src/main/java/tasks/AccountChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bon-Bonnit/src/main/java/tasks/AccountChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/2d31de143af0ed3c4eab78c7c6f4af73a213e1ef53bd9c0cc059750ef3d0cc4c.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/2d31de143af0ed3c4eab78c7c6f4af73a213e1ef53bd9c0cc059750ef3d0cc4c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/2d31de143af0ed3c4eab78c7c6f4af73a213e1ef53bd9c0cc059750ef3d0cc4c.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/2d31de143af0ed3c4eab78c7c6f4af73a213e1ef53bd9c0cc059750ef3d0cc4c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/2d31de143af0ed3c4eab78c7c6f4af73a213e1ef53bd9c0cc059750ef3d0cc4c_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/2d31de143af0ed3c4eab78c7c6f4af73a213e1ef53bd9c0cc059750ef3d0cc4c_screenshots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/SERENITY-JUNIT-2d31de143af0ed3c4eab78c7c6f4af73a213e1ef53bd9c0cc059750ef3d0cc4c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/SERENITY-JUNIT-2d31de143af0ed3c4eab78c7c6f4af73a213e1ef53bd9c0cc059750ef3d0cc4c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Bon-Bonnit/target/site/serenity/browser-chrome.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/target/site/serenity/SERENITY-JUNIT-c9c1ba5d6da909b57e021496594a45f74550e25379c6eb2566b278e528ee1904.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/target/site/serenity/SERENITY-JUNIT-c9c1ba5d6da909b57e021496594a45f74550e25379c6eb2566b278e528ee1904.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/target/site/serenity/browser-chrome.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/target/site/serenity/c9c1ba5d6da909b57e021496594a45f74550e25379c6eb2566b278e528ee1904.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/target/site/serenity/c9c1ba5d6da909b57e021496594a45f74550e25379c6eb2566b278e528ee1904.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/target/site/serenity/c9c1ba5d6da909b57e021496594a45f74550e25379c6eb2566b278e528ee1904.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/target/site/serenity/c9c1ba5d6da909b57e021496594a45f74550e25379c6eb2566b278e528ee1904.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2VcXzM07YfSX0YGvAp2QKZF5AnA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "onboarding.tips.debug.path": "C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/example/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="453060e7-d165-4d1e-b8a4-0b4fdd0633e2" name="Changes" comment="" />
+      <created>1695136605489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695136605489</updated>
+      <workItem from="1695136606709" duration="293000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

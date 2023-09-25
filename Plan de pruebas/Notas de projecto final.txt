@@ -1,0 +1,43 @@
+serenity.properties - buenas practicas 
+
+componentes - partes de la pagina que perduran
+en varias paginas
+
+preparamos el escenario para que el 
+actor interactue con la pagina
+pasandole un objeto de tipo performable
+implementando la interfaz Task
+
+las clases de los models finalizan con "data"
+
+¿como ejecutar escenarios en paralelo?
+
+visibility - buscar metodos de la clase question
+
+con un merche nos pasamos a la main
+y hacemos pull, luego creamos otra rama
+
+buscar sonido entre sign in y sign up
+
+Buena practica tener todo
+
+el @Managed  y el @Before solo se puede crear de una sola
+
+el nombre del metodo del @after 
+es el finished
+
+entre mas limpio este el stepdefinitions mejor
+
+creamos una clase "Hooks" para quedar mejor 
+implementados nuestros escenarios
+
+serenity bdd para la reporteria 
+
+OJO: tener en cuenta - llegar
+hasta la escuela militar para
+tomar estos buses 
+
+H15 - casa para alla - OLAYA
+C15 - alla para casa - OLAYA
+
+20
